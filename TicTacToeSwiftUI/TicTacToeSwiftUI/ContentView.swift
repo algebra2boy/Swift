@@ -31,6 +31,7 @@ struct ContentView: View {
                         Text(cell.displayTile())
                             .font(.system(size: 60))
                             .bold()
+                            // change the text color of the cell
                             .foregroundColor(cell.tileColor())
                             // fill up the whole screen first
                             .frame(maxWidth: .infinity,

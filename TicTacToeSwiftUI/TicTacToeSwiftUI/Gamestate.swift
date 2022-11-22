@@ -39,6 +39,7 @@ class GameState: ObservableObject {
         // short hand (if turn == Tile.Cross) {turn = Title.Cross} else {Tile.Circle}
         board[row][column].tile = turn == Tile.Cross ? Tile.Cross : Tile.Circle
         // if turn == Tile.Circle {turn = Tile.Cross } else {Title.Circle}
+        // at first it is Cross's turn, and now switch to Circle's turn (a cycle of Cross and Circle)
         turn = turn == Tile.Circle ? Tile.Cross : Tile.Circle
         
     
