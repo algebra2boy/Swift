@@ -35,3 +35,74 @@ print(score1)
 
 
 // Array<Int>() is same as [Int]()
+
+
+let person = [
+	"place": "boston",
+	"city": "Malden",
+	"sex": "male"
+]
+
+print(person)
+print(person["place"])
+print(person["city"])
+print(person["sex"])
+
+// “this data might not actually be there – are you sure you want to print it?”
+// provide a default value to use if the key doesn’t exist.
+print(person["place", default: "Unknown"]) 
+print(person["city" , default: "Unknown"])
+print(person["sex" , default: "Unknown"])
+
+print(person["apple"]) // return nil because key does not exist
+print(person["apple", default: "Unknown"]) // since it does not exist, it will choose the default
+
+
+// create an empty dictionary 
+// key as String and Int as value
+var heights = [String : Int] ()
+heights["Yao Ming"] = 229
+heights["Shaquille O'Neal"] = 216
+heights["LeBron James"] = 206
+
+
+
+// making a set 
+let people = Set(["Denzel Washington", "Tom Cruise", "Nicolas Cage", "Samuel L Jackson"])
+print(people) // each time the output is different after printing out
+
+var people2 = Set<String>()
+people2.insert("Denzel Washington")
+people2.insert("Tom Cruise")
+people2.insert("Nicolas Cage")
+people2.insert("Samuel L Jackson")
+print(people2)
+
+// enum is like switch case 
+// very convinent 
+enum Weekday {
+    case monday
+    case tuesday
+    case wednesday
+    case thursday
+    case friday
+}
+
+"""
+shorter way to write enum
+enum Weekday {
+    case monday, tuesday, wednesday, thursday, friday
+}
+"""
+
+var day = Weekday.monday
+print(day) // "monday"
+day = Weekday.tuesday
+print(day) // "tuesday"
+day = .friday  // because var already refers to Weekday, so we do not need to specify it again
+print(day)
+
+
+
+
+
