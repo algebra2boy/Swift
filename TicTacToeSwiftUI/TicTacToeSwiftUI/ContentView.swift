@@ -31,15 +31,15 @@ struct ContentView: View {
                         Text(cell.displayTile())
                             .font(.system(size: 60))
                             .bold()
-                            // change the text color of the cell
+                        // change the text color of the cell
                             .foregroundColor(cell.tileColor())
-                            // fill up the whole screen first
+                        // fill up the whole screen first
                             .frame(maxWidth: .infinity,
                                    maxHeight: .infinity)
-                            // reduce to good ratio and make it fit
+                        // reduce to good ratio and make it fit
                             .aspectRatio(1, contentMode: .fit)
                             .background(Color.white)
-                            // put the X and O onto the grid if it is clicked
+                        // put the X and O onto the grid if it is clicked
                             .onTapGesture {
                                 gameState.placeTitle(row, column)
                             }
@@ -50,6 +50,15 @@ struct ContentView: View {
         .background(Color.black)
         // give it a little of edge
         .padding(10)
+        // give it an alert when there is a winner or draw
+        /// convert Bool to Binding<Bool> by placing the $ in front of gameState
+        .alert(isPresented: $gameState.showAlertMessage) {
+            Alert(title: Text(gameState.alertMessage),
+                  /// .default creates a alert button
+                dismissButton: .default(Text("OK")) {
+                gameState.resetBoard()
+            })
+        }
     }
 }
 

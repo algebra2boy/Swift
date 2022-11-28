@@ -39,7 +39,5 @@ struct Cell {
 }
 
 enum Tile {
-    case Circle
-    case Cross
-    case Empty
+    case Circle, Cross, Empty
 }
