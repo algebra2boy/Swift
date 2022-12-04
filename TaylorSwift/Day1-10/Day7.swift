@@ -25,3 +25,50 @@ func stringBreakDown(str_list : String) -> [Character] {
 
 var list = stringBreakDown(str_list: "abcd")
 print(list)
+
+func isUppercase(string: String) -> Bool {
+	return string == string.uppercased()
+}
+
+print(isUppercase(string: "ABC"))
+print(isUppercase(string: "aBC"))
+
+func getClass() -> [String] {
+	return ["Math", "CS", "History "]
+}
+
+let classItake = getClass()
+for c in 0..<classItake.count {
+	print("Class \(c) is \(classItake[c])")
+}
+
+func getCLassAndProfessor() -> [String:String] {
+	return ["Math": "Eric",
+	 "CS" : "Marius",
+	 "History" : "Fresch"]
+}
+
+let cp = getCLassAndProfessor()
+
+for (c, professor) in cp {
+	print("professor \(professor) teaches \(c)")
+}
+
+
+func getUser() -> (firstName: String, lastName: String) {
+    (firstName: "Taylor", lastName: "Swift")
+}
+
+// object then call the field
+let user = getUser()
+print("Name: \(user.firstName) \(user.lastName)")
+print("Name: \(user.0) \(user.1)")
+
+// tuple notation 
+let (firstName, lastName) = getUser()
+print("Name: \(user.firstName) \(user.lastName)")
+
+// only want part of the user 
+let (First, _) = getUser()
+print("Name: \(First)")
+
