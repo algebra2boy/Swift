@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// entry point where the Xcode builds the program
 @main
 struct TicTacToeSwiftUIApp: App {
     var body: some Scene {

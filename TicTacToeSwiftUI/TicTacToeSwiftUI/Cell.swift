@@ -38,6 +38,7 @@ struct Cell {
     
 }
 
+// specifying the state of Title
 enum Tile {
     case Circle, Cross, Empty
 }

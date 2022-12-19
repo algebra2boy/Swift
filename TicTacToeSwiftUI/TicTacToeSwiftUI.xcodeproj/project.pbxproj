@@ -13,6 +13,8 @@
 		AE828A17292BF5C500028452 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE828A16292BF5C500028452 /* Preview Assets.xcassets */; };
 		AE828A1E292BF5F200028452 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE828A1D292BF5F200028452 /* Cell.swift */; };
 		AE828A20292BFBE300028452 /* Gamestate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE828A1F292BFBE300028452 /* Gamestate.swift */; };
+		AEDE659629511658005D2681 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AEDE659529511658005D2681 /* README.md */; };
+		AEDE65982951176B005D2681 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AEDE65972951176B005D2681 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		AE828A16292BF5C500028452 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AE828A1D292BF5F200028452 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		AE828A1F292BFBE300028452 /* Gamestate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gamestate.swift; sourceTree = "<group>"; };
+		AEDE659529511658005D2681 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AEDE65972951176B005D2681 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,8 @@
 		AE828A02292BF5C400028452 = {
 			isa = PBXGroup;
 			children = (
+				AEDE65972951176B005D2681 /* .gitignore */,
+				AEDE659529511658005D2681 /* README.md */,
 				AE828A0D292BF5C400028452 /* TicTacToeSwiftUI */,
 				AE828A0C292BF5C400028452 /* Products */,
 			);
@@ -133,6 +139,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEDE65982951176B005D2681 /* .gitignore in Resources */,
+				AEDE659629511658005D2681 /* README.md in Resources */,
 				AE828A17292BF5C500028452 /* Preview Assets.xcassets in Resources */,
 				AE828A13292BF5C500028452 /* Assets.xcassets in Resources */,
 			);

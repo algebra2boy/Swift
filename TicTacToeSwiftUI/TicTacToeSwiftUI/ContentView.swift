@@ -13,10 +13,22 @@ struct ContentView: View {
     
     var body: some View
     {
+        
+        Text(gameState.tileTurn())
+            .bold()
+            .font(.title)
+            .padding()
+        Spacer()
+        
+        Text(String(format: "Crosses: %d", gameState.CrossScore))
+            .bold()
+            .font(.title)
+            .padding()
+        
         // create a vertical stack
         VStack(spacing: CGFloat(10))
         {
-            /// create three rows
+            /// create three rows (is is 0,1,2)
             ForEach(0...2, id: \.self )
             {
                 /// create horizontal stack for each of the row
@@ -28,6 +40,7 @@ struct ContentView: View {
                         
                         let cell = gameState.board[row][column]
                         
+                        // intially it is all ""
                         Text(cell.displayTile())
                             .font(.system(size: 60))
                             .bold()
@@ -39,7 +52,7 @@ struct ContentView: View {
                         // reduce to good ratio and make it fit
                             .aspectRatio(1, contentMode: .fit)
                             .background(Color.white)
-                        // put the X and O onto the grid if it is clicked
+                        // put the X and O onto the grid if it is clicked (important)
                             .onTapGesture {
                                 gameState.placeTitle(row, column)
                             }
@@ -47,6 +60,7 @@ struct ContentView: View {
                 }
             }
         }
+        // the line of lines
         .background(Color.black)
         // give it a little of edge
         .padding(10)
@@ -56,14 +70,21 @@ struct ContentView: View {
             Alert(title: Text(gameState.alertMessage),
                   /// .default creates a alert button
                 dismissButton: .default(Text("OK")) {
+                // reset the board right after the user clicks OK
                 gameState.resetBoard()
             })
         }
+        Text(String(format: "Circle: %d", gameState.CircleScore))
+            .bold()
+            .font(.title)
+            .padding()
+        Spacer()
     }
 }
 
+/// create the preview
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-    }
+    } 
 }

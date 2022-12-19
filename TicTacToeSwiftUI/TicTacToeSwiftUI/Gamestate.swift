@@ -33,6 +33,10 @@ class GameState: ObservableObject {
         board = newBoard
     }
     
+    func tileTurn() -> String {
+        return (turn == Tile.Circle) ? "Turn O" : "Turn X"
+    }
+    
     func placeTitle(_ row:Int, _ column:Int) {
         
         // a symbol has been put, no need to change
@@ -59,6 +63,29 @@ class GameState: ObservableObject {
             /// keep switching turns if no winner yet
             turn = (turn == Tile.Circle) ? Tile.Cross : Tile.Circle
         }
+        
+        
+        // check for the draw (when there is no tile left and no win or lose)
+        
+        if (checkForDraw()) {
+            alertMessage = "Draw"
+            showAlertMessage = true
+        }
+        
+    }
+    
+    func checkForDraw() -> Bool {
+        
+        for row in board {
+            for cell in row {
+                if (cell.tile == Tile.Empty) {
+                    return false
+                }
+            }
+        }
+        
+        return true
+        
     }
     
     func checkWhoWin() -> Bool{
