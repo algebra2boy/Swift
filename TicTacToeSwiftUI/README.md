@@ -11,4 +11,7 @@ I am making a simple Tic-Toe-Tac to learn how SwiftUI works
 ## Credit!
 Thank you [Cal](https://www.youtube.com/watch?v=LmkHSTPK2h8) for providing such a good resource
 
+## Videowalkthrough
+
+https://user-images.githubusercontent.com/103079472/208536777-d9501074-7728-40d1-805c-ceaa15c7de44.mov
 
