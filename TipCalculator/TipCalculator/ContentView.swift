@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var total_payment = ""
+    @State var total_payment = "100"
     @State var tip_percentage = 18.0
     var body: some View {
         VStack {
@@ -34,7 +34,16 @@ struct ContentView: View {
                 // tip percent has to be in the range of 1 to 30 and increment/decrement by 1
                 Slider(value: $tip_percentage, in: 1...30, step: 1)
                 // has to convert a number to a text
-                Text("\(tip_percentage)%")
+                Text("\(Int(tip_percentage))%")
+                
+            }
+            // totaly payment must not be null
+            // specifier formats the 2 decimal places
+            /// this ensures numeric conversion
+            if let total = Double(total_payment) {
+                Text("Tip Amount: $ \(total * tip_percentage/100, specifier: "%0.2f")")
+            } else {
+                Text ("Please enter a numeric value")
             }
         }
         .padding()
