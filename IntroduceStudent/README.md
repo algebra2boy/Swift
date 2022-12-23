@@ -23,3 +23,7 @@ https://user-images.githubusercontent.com/103079472/209269654-f70e7231-ef51-47ba
 - [x] 1. User can tap a button to change the color of the background view
 - [x] 3. User can select on additional buttons that provide more info about the user. Example: more textfields, a different alert box, etc.
 - [x] 4. Any stylistic changes that are not default options (add colors to label and different style on the text fields)
+
+
+### Credits
+I accidentally included the audio in the video. It is a slow love song.
