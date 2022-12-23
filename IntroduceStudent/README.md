@@ -1,15 +1,13 @@
-## Introduction Student
+## An Introduction of a Student
 
 ### App Description
-
+This is a basic app that you need to input your names and school name and pets info to introduce youself. The components I used were labels, buttons,
+segmented control, switch control. 
 
 ### App Walk-though
 
-`TODO://` Add the URL to your animated app walk-though `gif` in the image tag below. Make sure the gif actually renders and animates when viewing this README. (☝️ Remove this paragraph after after adding gif). LICEcap is a great tool for recording and you can simply upload the gif to GitHub and provide the path name in place of URL as shown below.
+https://user-images.githubusercontent.com/103079472/209269654-f70e7231-ef51-47ba-8a4f-472420d9e474.mov
 
-<!-- <img src="YOUR_GIF_URL_HERE" width=200><br> OR <img src="YOUR_GIF_PATH" width=200><br> -->
-
-`TODO://` In the Features section below, add an `x` between the `-[ ]` like this `- [x]` for any features you complete. (☝️ Remove this paragraph after after checking off user stories)
 
 ### Required Features
 
