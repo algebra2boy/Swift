@@ -6,7 +6,9 @@ segmented control, switch control.
 
 ### App Walk-though
 
-https://user-images.githubusercontent.com/103079472/209269654-f70e7231-ef51-47ba-8a4f-472420d9e474.mov
+https://user-images.githubusercontent.com/103079472/209354646-c68abbe2-70c5-4457-baad-f8bea32a2d45.mov
+
+
 
 
 ### Required Features
@@ -24,6 +26,3 @@ https://user-images.githubusercontent.com/103079472/209269654-f70e7231-ef51-47ba
 - [x] 3. User can select on additional buttons that provide more info about the user. Example: more textfields, a different alert box, etc.
 - [x] 4. Any stylistic changes that are not default options (add colors to label and different style on the text fields)
 
-
-### Credits
-I accidentally included the audio in the video. It is a slow love song.
