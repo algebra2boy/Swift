@@ -95,3 +95,62 @@ let payment3 = { () -> Bool in
 
 }
 print(payment3())
+
+
+
+//  Trailing closure nad shorthand syntax
+// no need to specify the parameter types and the return type 
+let captainShortHand = team.sorted(by: { name1, name2 in 
+	if name1 == "Suzanne" {
+		return true
+	} else if name2 == "Suzanne" {
+		return false
+	}
+	return name1 < name2
+})
+
+// trailing closure
+let captainTrailing = team.sorted { name1, name2 in 
+	if name1 == "Suzanne" {
+		return true
+	} else if name2 == "Suzanne" {
+		return false
+	}
+	return name1 < name2
+}
+
+// less clear syntax 
+let captainLessClearSyntax = team.sorted {
+	if $0 == "Suzanne" {
+		return true
+	} else if $1 == "Suzanne" {
+		return false
+	}
+	return $0 < $1
+}
+
+// no need to specify the word "return "
+let reverseTeam = team.sorted { $0 > $1 }
+print(reverseTeam)
+
+// select the item with the capitalized "T" 
+let tonly = team.filter { $0.hasPrefix("T")}
+print(tonly)
+
+// making all the strings to uppercase string
+let uppercaseTeam = team.map { $0.uppercased() }
+print(uppercaseTeam)
+
+
+// accept functions as parameters
+var goOnBike = {
+	print("I'll take my bicycle.")
+}
+func race(using vehicleType: () -> Void) {
+	print("Let's race!")
+	vehicleType()
+}
+
+
+
+
