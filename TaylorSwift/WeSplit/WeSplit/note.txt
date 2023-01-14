@@ -1,0 +1,53 @@
+Form {} is a container for grouping control used for data entry
+     - Group {} maximize the number of view, can have more than 10 views in a form
+     - Section {} separates group
+     ->
+            .navigationTitle("SwiftUI")
+            .navigationBarTitleDisplayMode(.inline)
+
+NavigationView {} can add a nice space at the top
+    - An iOS Navigation bar appears at the top of an app screen, below the status bar, and enables navigation through a series of hierarchical app screens.
+
+@State var <the name of the variable> = <start value>
+    -> modifying values in a swiftUI view
+@State private var tapCount = 0
+    -> make sure this is not accessed elsewhere, other than the local
+    
+TextField {}
+    - make a container that accepts and write value from
+
+ A two-way binding: we bind the text field so that it shows the value of our property, but we also bind it so that any changes to the text field also update the property.
+    - it means it can read from the value and also write the value back to the variable
+    - we would use the special sign, $
+
+Using a ForEach loop
+Form {
+    ForEach(0..<10) { number in
+        Text("Row \(number)")
+    }
+}
+
+shorthand closure
+Form {
+    ForEach(0..<10) {
+        Text("Row \($0)")
+    }
+}
+
+
+Picker {}
+    - A control for selecting from a set of mutually exclusive events 
+
+NavigationView {
+            Form {
+                Picker("Select your friend",
+                        // this is the placeholder
+                       selection: $selectedStudent) {
+                    // looping over the array, id:\.self is important to let swift to identify the element, which is the student
+                    ForEach(students, id:\.self) {
+                        Text($0)
+                    }
+                }
+            }
+            
+        }
