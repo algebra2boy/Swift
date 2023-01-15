@@ -40,7 +40,7 @@ if let number = number {
 func printSquare(of number: Int?) {
     guard let number = number else {
         print("Missing output")
-        // return
+        return
     }
     print("\(number) x \(number) is \(number * number)")
 }
