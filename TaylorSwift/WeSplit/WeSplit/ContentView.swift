@@ -12,6 +12,9 @@ struct ContentView: View {
     @State private var checkAmount: Double = 0.0
     @State private var numberOfPeople: Int = 2
     @State private var tipPercentage: Int = 20
+    //  exactly like a regular @State property, except it’s specifically designed to handle input focus in our UI.
+    // no need to specify a value at the beginning
+    @FocusState private var amountIsFocused: Bool
     
     let tipPercentages: [Int] = [10, 15, 20, 25, 0]
     
@@ -26,6 +29,9 @@ struct ContentView: View {
         return grandTotal / peopleCount
     }
     
+    
+    
+    
     var body: some View {
         NavigationView {
             Form {
@@ -34,6 +40,7 @@ struct ContentView: View {
                     TextField("Amount", value: $checkAmount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
                     // using a different keyboard
                         .keyboardType(.decimalPad)
+                        .focused($amountIsFocused)
                     
                     // first one is the placeholder, then specify how many people we should select
                     Picker("Number of people", selection: $numberOfPeople) {
@@ -45,16 +52,45 @@ struct ContentView: View {
                 }
                 Section {
                     Picker("Tip percentage", selection: $tipPercentage ) {
-                        ForEach(tipPercentages, id: \.self) {
+                        ForEach(0..<101) {
                             Text($0, format: .percent)
                         }
                     }
-                    .pickerStyle(.segmented)
+                    .pickerStyle(.wheel)
+                    // try .segmented
                 } header: {
                     Text("How much tips do you want to leave?")
                 }
+                
+                Section {
+                    Text(totalPerPerson * Double(numberOfPeople + 2), format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+                } header: {
+                    Text("Total amount with tips")
+                }
+                
+                
                 Section {
                     Text(totalPerPerson, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+                } header: {
+                    Text("Amount per person")
+                }
+                
+                
+                
+            }
+            .navigationTitle("Wesplit")
+            .navigationBarTitleDisplayMode(.inline)
+            // The toolbar() modifier lets us specify toolbar items for a view.
+            .toolbar {
+                // lets us place one or more buttons in a specific location
+                // and a button placement an the keyboard
+                ToolbarItemGroup(placement: .keyboard) {
+                    // push the button all the way to the right
+                    Spacer()
+                    Button("Done") {
+                        // once the button is pressed, set focus to false
+                        amountIsFocused = false
+                    }
                 }
             }
             
