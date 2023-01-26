@@ -49,7 +49,11 @@ struct ContentView: View {
                             Text("\($0) people")
                         }
                     }
+                } header: {
+                    Text("Total amount")
                 }
+                
+                
                 Section {
                     Picker("Tip percentage", selection: $tipPercentage ) {
                         ForEach(0..<101) {
@@ -64,6 +68,7 @@ struct ContentView: View {
                 
                 Section {
                     Text(totalPerPerson * Double(numberOfPeople + 2), format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+                        .foregroundColor( (tipPercentage == 0) ? .red : .black)
                 } header: {
                     Text("Total amount with tips")
                 }
@@ -71,6 +76,7 @@ struct ContentView: View {
                 
                 Section {
                     Text(totalPerPerson, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+                        .foregroundColor( (tipPercentage == 0) ? .red : .black)
                 } header: {
                     Text("Amount per person")
                 }
