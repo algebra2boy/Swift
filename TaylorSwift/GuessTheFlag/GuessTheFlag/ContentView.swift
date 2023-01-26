@@ -7,6 +7,18 @@
 
 import SwiftUI
 
+// a view that render one flag image using the speciic set of modifiers
+struct FlagImage: View {
+    var name_of_country: String
+    
+    var body: some View {
+        Image(name_of_country)
+            .renderingMode(.original)
+            .shadow(radius: 10)
+    }
+}
+
+
 struct ContentView: View {
     @State private var showingScore = false
     @State private var scoreTitle = ""
@@ -50,9 +62,7 @@ struct ContentView: View {
                             flagTapped(number)
                             askMoreQuestion()
                         } label: {
-                            Image(countries[number])
-                                .renderingMode(.original)
-                                .shadow(radius: 10)
+                            FlagImage(name_of_country: countries[number])
                         }
                     }
                 }
