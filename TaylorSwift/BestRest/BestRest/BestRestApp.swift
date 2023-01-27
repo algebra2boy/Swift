@@ -11,7 +11,7 @@ import SwiftUI
 struct BestRestApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BestRestView()
         }
     }
 }
