@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE15A20F2984E0B600376DAA /* sleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AE15A20E2984E0B600376DAA /* sleepCalculator.mlmodel */; };
 		AE93A986298307FA00BF9FB4 /* BestRestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE93A985298307FA00BF9FB4 /* BestRestApp.swift */; };
 		AE93A988298307FA00BF9FB4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE93A987298307FA00BF9FB4 /* ContentView.swift */; };
 		AE93A98A298307FB00BF9FB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE93A989298307FB00BF9FB4 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE15A20E2984E0B600376DAA /* sleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = sleepCalculator.mlmodel; path = ../../../../sleepCalculator.mlmodel; sourceTree = "<group>"; };
 		AE93A982298307FA00BF9FB4 /* BestRest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestRest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE93A985298307FA00BF9FB4 /* BestRestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestRestApp.swift; sourceTree = "<group>"; };
 		AE93A987298307FA00BF9FB4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				AE93A985298307FA00BF9FB4 /* BestRestApp.swift */,
 				AE93A987298307FA00BF9FB4 /* ContentView.swift */,
+				AE15A20E2984E0B600376DAA /* sleepCalculator.mlmodel */,
 				AE93A9AD2983685700BF9FB4 /* BestRestView.swift */,
 				AE93A989298307FB00BF9FB4 /* Assets.xcassets */,
 				AE93A98B298307FB00BF9FB4 /* Preview Content */,
@@ -142,6 +145,7 @@
 			files = (
 				AE93A988298307FA00BF9FB4 /* ContentView.swift in Sources */,
 				AE93A986298307FA00BF9FB4 /* BestRestApp.swift in Sources */,
+				AE15A20F2984E0B600376DAA /* sleepCalculator.mlmodel in Sources */,
 				AE93A9AE2983685700BF9FB4 /* BestRestView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
