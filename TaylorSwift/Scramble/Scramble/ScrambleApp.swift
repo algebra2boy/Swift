@@ -11,7 +11,7 @@ import SwiftUI
 struct ScrambleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ScrambleView()
         }
     }
 }

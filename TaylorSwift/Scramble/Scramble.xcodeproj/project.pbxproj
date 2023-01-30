@@ -11,6 +11,8 @@
 		AEC3E1AF29860D7300865237 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3E1AE29860D7300865237 /* ContentView.swift */; };
 		AEC3E1B129860D7400865237 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC3E1B029860D7400865237 /* Assets.xcassets */; };
 		AEC3E1B429860D7400865237 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC3E1B329860D7400865237 /* Preview Assets.xcassets */; };
+		AEC3E1BF29884FA000865237 /* ScrambleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3E1BE29884FA000865237 /* ScrambleView.swift */; };
+		AEC3E1C1298855A300865237 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = AEC3E1C0298855A200865237 /* start.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		AEC3E1AE29860D7300865237 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AEC3E1B029860D7400865237 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEC3E1B329860D7400865237 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AEC3E1BE29884FA000865237 /* ScrambleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrambleView.swift; sourceTree = "<group>"; };
+		AEC3E1C0298855A200865237 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,8 @@
 			isa = PBXGroup;
 			children = (
 				AEC3E1AC29860D7300865237 /* ScrambleApp.swift */,
+				AEC3E1BE29884FA000865237 /* ScrambleView.swift */,
+				AEC3E1C0298855A200865237 /* start.txt */,
 				AEC3E1AE29860D7300865237 /* ContentView.swift */,
 				AEC3E1B029860D7400865237 /* Assets.xcassets */,
 				AEC3E1B229860D7400865237 /* Preview Content */,
@@ -126,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEC3E1B429860D7400865237 /* Preview Assets.xcassets in Resources */,
+				AEC3E1C1298855A300865237 /* start.txt in Resources */,
 				AEC3E1B129860D7400865237 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEC3E1BF29884FA000865237 /* ScrambleView.swift in Sources */,
 				AEC3E1AF29860D7300865237 /* ContentView.swift in Sources */,
 				AEC3E1AD29860D7300865237 /* ScrambleApp.swift in Sources */,
 			);
