@@ -24,9 +24,15 @@ struct ScrambleView: View {
             List {
                 Section {
                     TextField("Enter your word", text: $newWord)
-                        .autocapitalization(.none)
+                            .autocapitalization(.none)
+                    // add a HStack to make sure the symbol goes horizontally
+                    HStack {
+                        ForEach(useWords, id: \.self) { _ in
+                            Image(systemName: "checkmark.circle")
+                                .foregroundColor(useWords.count > 0 ? Color.green : Color.gray)
+                        }
+                    }
                 }
-                
                 Section {
                     ForEach(useWords, id: \.self) { word in
                         HStack {
@@ -39,16 +45,20 @@ struct ScrambleView: View {
             }
             // put this here in the list's modifier, instead of NavigationView's modifier
             .navigationTitle(rootWord)
-        }
-        // add an action to the view when user submit an value to the view
-        .onSubmit (addNewWord)
-        // run a function when the view is shown
-        .onAppear(perform: startGame)
-        // add an alert
-        .alert(errorTitle, isPresented: $showingError) {
-            Button("Okay", role: .cancel) {}
-        } message: {
-            Text(errorMessage)
+            // re-generate word every time
+            .toolbar {
+                Button("startGame", action: startGame)
+            }
+            // add an action to the view when user submit an value to the view
+            .onSubmit (addNewWord)
+            // run a function when the view is shown
+            .onAppear(perform: startGame)
+            // add an alert
+            .alert(errorTitle, isPresented: $showingError) {
+                Button("Okay", role: .cancel) {}
+            } message: {
+                Text(errorMessage)
+            }
         }
         
     }
@@ -56,8 +66,12 @@ struct ScrambleView: View {
     func addNewWord() {
         // step1: lowercase the string and get rid of the whitespace and new lines
         let answer = newWord.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
-        // making sure that we have at least one characrter
-        guard answer.count > 0 else { return }
+        // making sure that we have at least two characrter
+        guard answer.count > 2 else {
+            wordError(title: "Word too short", message: "Must have at least two character")
+            return
+            
+        }
         
         // making the word is not duplicated
         guard isOriginal(word: answer) else {
