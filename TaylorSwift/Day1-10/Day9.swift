@@ -151,6 +151,10 @@ func race(using vehicleType: () -> Void) {
 	vehicleType()
 }
 
+// the variable is a function
+goOnBike()
 
+// therefore we cannot do 
+// goOnBike
 
 
