@@ -10,6 +10,7 @@
 		AE0958B329B43C10001C33A6 /* AnimationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0958B229B43C10001C33A6 /* AnimationStack.swift */; };
 		AE0958B529B43F4D001C33A6 /* AnimalGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0958B429B43F4D001C33A6 /* AnimalGesture.swift */; };
 		AE0958B729B4415A001C33A6 /* HelloSwiftUIAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0958B629B4415A001C33A6 /* HelloSwiftUIAnimation.swift */; };
+		AE0958B929B44861001C33A6 /* ShowingAndHidingTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0958B829B44861001C33A6 /* ShowingAndHidingTransition.swift */; };
 		AE2E9CBD2989D3E600B73E75 /* BindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2E9CBC2989D3E600B73E75 /* BindingView.swift */; };
 		AE2E9CBF2989D71000B73E75 /* ExplictView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2E9CBE2989D71000B73E75 /* ExplictView.swift */; };
 		AE68FC8A2989C5B5001658CD /* AnimationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE68FC892989C5B5001658CD /* AnimationApp.swift */; };
@@ -22,6 +23,7 @@
 		AE0958B229B43C10001C33A6 /* AnimationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationStack.swift; sourceTree = "<group>"; };
 		AE0958B429B43F4D001C33A6 /* AnimalGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalGesture.swift; sourceTree = "<group>"; };
 		AE0958B629B4415A001C33A6 /* HelloSwiftUIAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloSwiftUIAnimation.swift; sourceTree = "<group>"; };
+		AE0958B829B44861001C33A6 /* ShowingAndHidingTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowingAndHidingTransition.swift; sourceTree = "<group>"; };
 		AE2E9CBC2989D3E600B73E75 /* BindingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingView.swift; sourceTree = "<group>"; };
 		AE2E9CBE2989D71000B73E75 /* ExplictView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplictView.swift; sourceTree = "<group>"; };
 		AE68FC862989C5B5001658CD /* Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +68,7 @@
 				AE0958B229B43C10001C33A6 /* AnimationStack.swift */,
 				AE0958B429B43F4D001C33A6 /* AnimalGesture.swift */,
 				AE0958B629B4415A001C33A6 /* HelloSwiftUIAnimation.swift */,
+				AE0958B829B44861001C33A6 /* ShowingAndHidingTransition.swift */,
 				AE68FC892989C5B5001658CD /* AnimationApp.swift */,
 				AE68FC8B2989C5B5001658CD /* ContentView.swift */,
 				AE2E9CBC2989D3E600B73E75 /* BindingView.swift */,
@@ -160,6 +163,7 @@
 				AE0958B529B43F4D001C33A6 /* AnimalGesture.swift in Sources */,
 				AE68FC8A2989C5B5001658CD /* AnimationApp.swift in Sources */,
 				AE2E9CBD2989D3E600B73E75 /* BindingView.swift in Sources */,
+				AE0958B929B44861001C33A6 /* ShowingAndHidingTransition.swift in Sources */,
 				AE0958B729B4415A001C33A6 /* HelloSwiftUIAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
