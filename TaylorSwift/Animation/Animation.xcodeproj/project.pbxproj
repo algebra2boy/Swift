@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE0958B329B43C10001C33A6 /* AnimationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0958B229B43C10001C33A6 /* AnimationStack.swift */; };
 		AE2E9CBD2989D3E600B73E75 /* BindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2E9CBC2989D3E600B73E75 /* BindingView.swift */; };
 		AE2E9CBF2989D71000B73E75 /* ExplictView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2E9CBE2989D71000B73E75 /* ExplictView.swift */; };
 		AE68FC8A2989C5B5001658CD /* AnimationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE68FC892989C5B5001658CD /* AnimationApp.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE0958B229B43C10001C33A6 /* AnimationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationStack.swift; sourceTree = "<group>"; };
 		AE2E9CBC2989D3E600B73E75 /* BindingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingView.swift; sourceTree = "<group>"; };
 		AE2E9CBE2989D71000B73E75 /* ExplictView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplictView.swift; sourceTree = "<group>"; };
 		AE68FC862989C5B5001658CD /* Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				AE2E9CBE2989D71000B73E75 /* ExplictView.swift */,
+				AE0958B229B43C10001C33A6 /* AnimationStack.swift */,
 				AE68FC892989C5B5001658CD /* AnimationApp.swift */,
 				AE68FC8B2989C5B5001658CD /* ContentView.swift */,
 				AE2E9CBC2989D3E600B73E75 /* BindingView.swift */,
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE0958B329B43C10001C33A6 /* AnimationStack.swift in Sources */,
 				AE2E9CBF2989D71000B73E75 /* ExplictView.swift in Sources */,
 				AE68FC8C2989C5B5001658CD /* ContentView.swift in Sources */,
 				AE68FC8A2989C5B5001658CD /* AnimationApp.swift in Sources */,
