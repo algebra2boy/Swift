@@ -16,7 +16,13 @@ struct ContentView: View {
 //            Text("Hello, world!")
 //        }
 //        .padding()
-        StateOnlyWorksWithStruct()
+        
+//        StateOnlyWorksWithStruct()
+        
+//        ShowingAndHidingViews()
+//        DeletingItemsUsingOnDelete()
+//        StoringUserSettingUsingUserDefault()
+        ArchivingObjectsWithCodable()
     }
 }
 

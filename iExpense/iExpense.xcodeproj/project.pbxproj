@@ -12,6 +12,10 @@
 		AE0958CB29B4ED2A001C33A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0958CA29B4ED2A001C33A6 /* Assets.xcassets */; };
 		AE0958CE29B4ED2A001C33A6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0958CD29B4ED2A001C33A6 /* Preview Assets.xcassets */; };
 		AE0958D529B4EDA1001C33A6 /* StateOnlyWorksWithStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0958D429B4EDA1001C33A6 /* StateOnlyWorksWithStruct.swift */; };
+		AE0958D729B50C47001C33A6 /* ShowingAndHidingViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0958D629B50C47001C33A6 /* ShowingAndHidingViews.swift */; };
+		AE0958D929B50FD7001C33A6 /* DeletingItemsUsingOnDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0958D829B50FD7001C33A6 /* DeletingItemsUsingOnDelete.swift */; };
+		AE0958DB29B51937001C33A6 /* StoringUserSettingUsingUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0958DA29B51937001C33A6 /* StoringUserSettingUsingUserDefault.swift */; };
+		AE0958DD29B51D5B001C33A6 /* ArchivingObjectsWithCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0958DC29B51D5B001C33A6 /* ArchivingObjectsWithCodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,10 @@
 		AE0958CA29B4ED2A001C33A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE0958CD29B4ED2A001C33A6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AE0958D429B4EDA1001C33A6 /* StateOnlyWorksWithStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateOnlyWorksWithStruct.swift; sourceTree = "<group>"; };
+		AE0958D629B50C47001C33A6 /* ShowingAndHidingViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowingAndHidingViews.swift; sourceTree = "<group>"; };
+		AE0958D829B50FD7001C33A6 /* DeletingItemsUsingOnDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletingItemsUsingOnDelete.swift; sourceTree = "<group>"; };
+		AE0958DA29B51937001C33A6 /* StoringUserSettingUsingUserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoringUserSettingUsingUserDefault.swift; sourceTree = "<group>"; };
+		AE0958DC29B51D5B001C33A6 /* ArchivingObjectsWithCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivingObjectsWithCodable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +63,11 @@
 			children = (
 				AE0958C629B4ED29001C33A6 /* iExpenseApp.swift */,
 				AE0958C829B4ED29001C33A6 /* ContentView.swift */,
+				AE0958DA29B51937001C33A6 /* StoringUserSettingUsingUserDefault.swift */,
 				AE0958D429B4EDA1001C33A6 /* StateOnlyWorksWithStruct.swift */,
+				AE0958DC29B51D5B001C33A6 /* ArchivingObjectsWithCodable.swift */,
+				AE0958D629B50C47001C33A6 /* ShowingAndHidingViews.swift */,
+				AE0958D829B50FD7001C33A6 /* DeletingItemsUsingOnDelete.swift */,
 				AE0958CA29B4ED2A001C33A6 /* Assets.xcassets */,
 				AE0958CC29B4ED2A001C33A6 /* Preview Content */,
 			);
@@ -141,6 +153,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE0958C929B4ED29001C33A6 /* ContentView.swift in Sources */,
+				AE0958D929B50FD7001C33A6 /* DeletingItemsUsingOnDelete.swift in Sources */,
+				AE0958DB29B51937001C33A6 /* StoringUserSettingUsingUserDefault.swift in Sources */,
+				AE0958DD29B51D5B001C33A6 /* ArchivingObjectsWithCodable.swift in Sources */,
+				AE0958D729B50C47001C33A6 /* ShowingAndHidingViews.swift in Sources */,
 				AE0958D529B4EDA1001C33A6 /* StateOnlyWorksWithStruct.swift in Sources */,
 				AE0958C729B4ED29001C33A6 /* iExpenseApp.swift in Sources */,
 			);
