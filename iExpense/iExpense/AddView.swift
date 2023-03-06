@@ -16,6 +16,9 @@ struct AddView: View {
     @State private var type = "Personal"
     @State private var amount = 0.0
     
+    // use to dismiss the screen
+    @Environment(\.dismiss) var dismiss
+    
     let types = ["Buisness", "Personal"]
     var body: some View {
         NavigationView {
@@ -32,6 +35,15 @@ struct AddView: View {
                     .keyboardType(.decimalPad)
             }
             .navigationTitle("Add new expense")
+            .toolbar {
+                Button("Save") {
+                    let item = ExpenseItem(name: name, type: type, amount: amount)
+                    expense.items.append(item)
+                    
+                    // dismiss the screen
+                    dismiss()
+                }
+            }
         }
         
         
