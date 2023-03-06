@@ -7,6 +7,8 @@
 
 import Foundation
 
+// ObservableObject comes with Publishe property wrapper
 class Expenses: ObservableObject {
+    // store a list expenseitem that is going to be shared among classes
     @Published var items = [ExpenseItem]()
 }

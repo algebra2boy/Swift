@@ -7,8 +7,8 @@
 
 import Foundation
 
-// protocol is for identifing uniquely for an object (only requirment is to include id = UUID).
-struct ExpenseItem:Identifiable{
+// Identifiable protocol is for identifing uniquely for an object (only requirment is to include id = UUID).
+struct ExpenseItem : Identifiable{
     // unique universalal id, important to identify both struct when both struct has the same data
     let id = UUID()
     // For example, apple, vegetable, $1.0
