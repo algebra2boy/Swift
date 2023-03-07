@@ -28,7 +28,8 @@ struct ContentView: View {
                         
                         Spacer() // push to the right
                         
-                        Text(item.amount, format: .currency(code: "USD"))
+                        // use user's preferred urrency
+                        Text(item.amount, format: .currency(code: Locale.current.currency?.identifier ?? "USA")))
                     }
                 }
                 .onDelete(perform: removeItems)
