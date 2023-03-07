@@ -37,6 +37,14 @@ struct AddView: View {
             .navigationTitle("Add new expense")
             .toolbar {
                 Button("Save") {
+                    
+//                    let mytime = Date()
+//                    let format = DateFormatter()
+//                    format.locale = Locale(identifier: "en_US_POSIX")
+//                    format.timeStyle = .short
+//                    format.dateStyle = .short
+//                    let timeAdded = format.string(from: mytime)
+                    
                     let item = ExpenseItem(name: name, type: type, amount: amount)
                     expense.items.append(item)
                     

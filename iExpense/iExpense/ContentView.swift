@@ -24,6 +24,11 @@ struct ContentView: View {
                             Text(item.name)
                                 .font(.headline)
                             Text(item.type)
+                            
+                            HStack (spacing: 0) {
+                                Image(systemName: "clock")
+                                Text("Save money!")
+                            }
                         }
                         
                         Spacer() // push to the right
