@@ -29,7 +29,19 @@ struct ContentView: View {
                         Spacer() // push to the right
                         
                         // use user's preferred urrency
-                        Text(item.amount, format: .currency(code: Locale.current.currency?.identifier ?? "USA")))
+                        if (item.amount < 10){
+                            Text(item.amount, format: .currency(code: Locale.current.currency?.identifier ?? "USA"))
+                                .foregroundColor(.green)
+                        } else if (item.amount < 100) {
+                            Text(item.amount, format: .currency(code: Locale.current.currency?.identifier ?? "USA"))
+                                .foregroundColor(.yellow)
+                        } else {
+                            Text(item.amount, format: .currency(code: Locale.current.currency?.identifier ?? "USA"))
+                                .foregroundColor(.red)
+                                .bold()
+                                .underline()
+                        }
+                        
                     }
                 }
                 .onDelete(perform: removeItems)
