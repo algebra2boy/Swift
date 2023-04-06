@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE0C321D29DE51CD009FA15F /* WorkingWithHierarchical_Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0C321C29DE51CD009FA15F /* WorkingWithHierarchical_Codable.swift */; };
+		AE0C321F29DE53DC009FA15F /* ScrollingGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0C321E29DE53DC009FA15F /* ScrollingGrid.swift */; };
 		AEE296AF29DA828A004512D0 /* PushNewsOnToStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE296AE29DA828A004512D0 /* PushNewsOnToStack.swift */; };
 		AEF62CB729C2A16300E4C686 /* MoonshotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF62CB629C2A16300E4C686 /* MoonshotApp.swift */; };
 		AEF62CB929C2A16300E4C686 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF62CB829C2A16300E4C686 /* ContentView.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE0C321C29DE51CD009FA15F /* WorkingWithHierarchical_Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingWithHierarchical_Codable.swift; sourceTree = "<group>"; };
+		AE0C321E29DE53DC009FA15F /* ScrollingGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingGrid.swift; sourceTree = "<group>"; };
 		AEE296AE29DA828A004512D0 /* PushNewsOnToStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNewsOnToStack.swift; sourceTree = "<group>"; };
 		AEF62CB329C2A16300E4C686 /* Moonshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moonshot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF62CB629C2A16300E4C686 /* MoonshotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonshotApp.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				AEF62CB629C2A16300E4C686 /* MoonshotApp.swift */,
+				AE0C321C29DE51CD009FA15F /* WorkingWithHierarchical_Codable.swift */,
+				AE0C321E29DE53DC009FA15F /* ScrollingGrid.swift */,
 				AEE296AE29DA828A004512D0 /* PushNewsOnToStack.swift */,
 				AEF62CB829C2A16300E4C686 /* ContentView.swift */,
 				AEF62CC429C2A66A00E4C686 /* GeometryReader.swift */,
@@ -145,6 +151,8 @@
 			files = (
 				AEF62CB929C2A16300E4C686 /* ContentView.swift in Sources */,
 				AEE296AF29DA828A004512D0 /* PushNewsOnToStack.swift in Sources */,
+				AE0C321D29DE51CD009FA15F /* WorkingWithHierarchical_Codable.swift in Sources */,
+				AE0C321F29DE53DC009FA15F /* ScrollingGrid.swift in Sources */,
 				AEF62CB729C2A16300E4C686 /* MoonshotApp.swift in Sources */,
 				AEF62CC529C2A66A00E4C686 /* GeometryReader.swift in Sources */,
 			);
