@@ -8,7 +8,10 @@
 import Foundation
 
 extension Bundle {
-    func decode(_ file: String) -> [String: Astronaut]{
+    // <T> is generic type
+    // could be any type that works on any data
+    // T must confrom decodable, so it would need to use Codable
+    func decode<T: Codable>(_ file: String) -> T{
         // need to use Bundle to find the path to the file
         guard let url = self.url(forResource: file, withExtension: nil) else {
             fatalError("Failed to locate \(file) in bundle")
@@ -20,7 +23,7 @@ extension Bundle {
         
         let decoder = JSONDecoder()
         // convert the json file to the swift dictionary form 
-        guard let loaded = try? decoder.decode([String: Astronaut].self, from: data) else {
+        guard let loaded = try? decoder.decode(T.self, from: data) else {
             fatalError("Failed to decode \(file) from bundle")
         }
         return loaded
