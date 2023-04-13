@@ -22,6 +22,13 @@ extension Bundle {
         }
         
         let decoder = JSONDecoder()
+        let formatter = DateFormatter()
+        // year-month-day
+        formatter.dateFormat = "y-MM-dd"
+        formatter.timeZone = .current
+        // decode date to json
+        decoder.dateDecodingStrategy = .formatted(formatter)
+        
         // convert the json file to the swift dictionary form 
         guard let loaded = try? decoder.decode(T.self, from: data) else {
             fatalError("Failed to decode \(file) from bundle")

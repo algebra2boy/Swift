@@ -37,7 +37,7 @@ struct Mootshot: View {
                                 VStack {
                                     Text(mission.displayName)
                                         .font(.headline)
-                                    Text(mission.launchDate ?? "N/A")
+                                    Text(mission.displayDate)
                                         .font(.caption)
                                 }
                                 .frame(maxWidth: .infinity)
