@@ -34,20 +34,41 @@ struct Mootshot: View {
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 100, height: 100)
+                                    .padding(.vertical)
                                 VStack {
                                     Text(mission.displayName)
                                         .font(.headline)
+                                        .foregroundColor(.white)
                                     Text(mission.displayDate)
                                         .font(.caption)
+                                        .foregroundColor(.white.opacity(0.5))
                                 }
+                                .padding(.vertical)
                                 .frame(maxWidth: .infinity)
+                                // lightBackground is a color but we customize it in the Color-Theme
+                                .background(.lightBackground)
                             }
+                            // make the bottom box looks like a rectangular box
+                            .clipShape(RoundedRectangle(cornerRadius: 10))
+                            // overlay makes the entire box to a rectangular
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(.lightBackground)
+                                )
                         }
                     }
                 }
+                // add padding horizontally and bottom between each grids
+                // works well only being added in the scrollview
+                .padding([.horizontal, .bottom])
+                
             }
+            
             // navigationTitle should be placed inside not outside
             .navigationTitle("Mootshot")
+            .background(.darkBackground)
+            // turn on only the dark mode (very cool)
+            .preferredColorScheme(.dark)
         }
     }
 }
