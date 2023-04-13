@@ -17,4 +17,13 @@ struct Mission: Codable, Identifiable {
     let launchDate: String?
     let crew: [CrewRole]
     let description: String
+    
+    // computed property
+    // good thing about this is to save memory
+    var displayName: String {
+        return "Apollo \(id)"
+    }
+    var image: String {
+        return "apollo\(id)"
+    }
 }
