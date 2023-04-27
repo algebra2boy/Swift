@@ -42,16 +42,17 @@ struct URLSession: View {
             return
         }
         
-        do {
-            let (data, response) = try await URLSession.shared.data(from: url)
-            if let decodedResponse = try? JSONDecoder().decode(Response.self, from: data) {
-                results = decodedResponse.results
-            }
-
-            // more code to come
-        } catch {
-            print("Invalid data")
-        }
+//        do {
+//            // Type of expression is ambiguous without more context
+//            let (data, response) = try await URLSession.shared.data(from: url)
+//            if let decodedResponse = try? JSONDecoder().decode(Response.self, from: data) {
+//                results = decodedResponse.results
+//            }
+//
+//            // more code to come
+//        } catch {
+//            print("Invalid data")
+//        }
     }
 }
 
