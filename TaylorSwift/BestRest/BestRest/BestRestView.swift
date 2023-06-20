@@ -5,6 +5,7 @@
 //  Created by Yongye Tan on 1/26/23.
 //
 
+
 import SwiftUI
 import CoreML
 
@@ -32,6 +33,7 @@ struct BestRestView: View {
     
     
     var body: some View {
+        
         NavigationView {
             Form { // try VStack(alignment: .leading, spacing: 10)
                 Section { // try Form

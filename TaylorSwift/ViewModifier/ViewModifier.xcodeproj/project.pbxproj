@@ -12,6 +12,7 @@
 		AE7CB1CF2980D27C0024734D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE7CB1CE2980D27C0024734D /* Assets.xcassets */; };
 		AE7CB1D22980D27C0024734D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE7CB1D12980D27C0024734D /* Preview Assets.xcassets */; };
 		AE7CB1D92982005A0024734D /* CustomedModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7CB1D82982005A0024734D /* CustomedModifier.swift */; };
+		AE98B9E12A362AE5003C6542 /* GridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98B9E02A362AE5003C6542 /* GridStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		AE7CB1CE2980D27C0024734D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE7CB1D12980D27C0024734D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AE7CB1D82982005A0024734D /* CustomedModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomedModifier.swift; sourceTree = "<group>"; };
+		AE98B9E02A362AE5003C6542 /* GridStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				AE7CB1CA2980D27B0024734D /* ViewModifierApp.swift */,
 				AE7CB1CC2980D27B0024734D /* ContentView.swift */,
 				AE7CB1D82982005A0024734D /* CustomedModifier.swift */,
+				AE98B9E02A362AE5003C6542 /* GridStack.swift */,
 				AE7CB1CE2980D27C0024734D /* Assets.xcassets */,
 				AE7CB1D02980D27C0024734D /* Preview Content */,
 			);
@@ -142,6 +145,7 @@
 			files = (
 				AE7CB1D92982005A0024734D /* CustomedModifier.swift in Sources */,
 				AE7CB1CD2980D27B0024734D /* ContentView.swift in Sources */,
+				AE98B9E12A362AE5003C6542 /* GridStack.swift in Sources */,
 				AE7CB1CB2980D27B0024734D /* ViewModifierApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

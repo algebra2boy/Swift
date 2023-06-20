@@ -58,6 +58,14 @@ struct ContentView: View {
             
             
         }
+        GridStack(rows: 4, columns: 4) { row, col in
+            HStack {
+                    Image(systemName: "\(row * 4 + col).circle")
+                    Text("R\(row) C\(col)")
+            }
+        }
+        
+        
         
         
     }

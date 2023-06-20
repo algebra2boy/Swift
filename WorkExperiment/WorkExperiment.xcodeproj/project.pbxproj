@@ -7,20 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE28CA072A26E700000141B9 /* PortraitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE28CA062A26E700000141B9 /* PortraitView.swift */; };
+		AE28CA092A26E930000141B9 /* textDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE28CA082A26E930000141B9 /* textDrop.swift */; };
+		AE28CA0B2A26F018000141B9 /* imageDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE28CA0A2A26F018000141B9 /* imageDrop.swift */; };
+		AE28CA0F2A26F6F8000141B9 /* videoDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE28CA0E2A26F6F8000141B9 /* videoDrop.swift */; };
 		AE3A00C82A04224600B9F7A3 /* WorkExperimentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3A00C72A04224600B9F7A3 /* WorkExperimentApp.swift */; };
 		AE3A00CA2A04224600B9F7A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3A00C92A04224600B9F7A3 /* ContentView.swift */; };
 		AE3A00CC2A04224700B9F7A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE3A00CB2A04224700B9F7A3 /* Assets.xcassets */; };
 		AE3A00CF2A04224700B9F7A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE3A00CE2A04224700B9F7A3 /* Preview Assets.xcassets */; };
 		AE3A00D62A04228C00B9F7A3 /* DragDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3A00D52A04228C00B9F7A3 /* DragDrop.swift */; };
+		AE9C80B12A26D6DD00319F27 /* fruitDragDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9C80B02A26D6DD00319F27 /* fruitDragDrop.swift */; };
+		AEBD14FB2A267E7500AC306D /* BookMarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBD14FA2A267E7500AC306D /* BookMarkList.swift */; };
+		AEED02F52A26AD8B0051A683 /* dropImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEED02F42A26AD8B0051A683 /* dropImageView.swift */; };
+		AEF2B4582A3BBE8200070651 /* TextFieldMultiline.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF2B4572A3BBE8200070651 /* TextFieldMultiline.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE28CA062A26E700000141B9 /* PortraitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitView.swift; sourceTree = "<group>"; };
+		AE28CA082A26E930000141B9 /* textDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textDrop.swift; sourceTree = "<group>"; };
+		AE28CA0A2A26F018000141B9 /* imageDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageDrop.swift; sourceTree = "<group>"; };
+		AE28CA0E2A26F6F8000141B9 /* videoDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoDrop.swift; sourceTree = "<group>"; };
 		AE3A00C42A04224600B9F7A3 /* WorkExperiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkExperiment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3A00C72A04224600B9F7A3 /* WorkExperimentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkExperimentApp.swift; sourceTree = "<group>"; };
 		AE3A00C92A04224600B9F7A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AE3A00CB2A04224700B9F7A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE3A00CE2A04224700B9F7A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AE3A00D52A04228C00B9F7A3 /* DragDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDrop.swift; sourceTree = "<group>"; };
+		AE9C80B02A26D6DD00319F27 /* fruitDragDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fruitDragDrop.swift; sourceTree = "<group>"; };
+		AEBD14FA2A267E7500AC306D /* BookMarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkList.swift; sourceTree = "<group>"; };
+		AEED02F42A26AD8B0051A683 /* dropImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dropImageView.swift; sourceTree = "<group>"; };
+		AEF2B4572A3BBE8200070651 /* TextFieldMultiline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldMultiline.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +70,16 @@
 			isa = PBXGroup;
 			children = (
 				AE3A00C72A04224600B9F7A3 /* WorkExperimentApp.swift */,
+				AE28CA0A2A26F018000141B9 /* imageDrop.swift */,
+				AE28CA0E2A26F6F8000141B9 /* videoDrop.swift */,
+				AEF2B4572A3BBE8200070651 /* TextFieldMultiline.swift */,
+				AE28CA062A26E700000141B9 /* PortraitView.swift */,
 				AE3A00C92A04224600B9F7A3 /* ContentView.swift */,
 				AE3A00D52A04228C00B9F7A3 /* DragDrop.swift */,
+				AEED02F42A26AD8B0051A683 /* dropImageView.swift */,
+				AEBD14FA2A267E7500AC306D /* BookMarkList.swift */,
+				AE28CA082A26E930000141B9 /* textDrop.swift */,
+				AE9C80B02A26D6DD00319F27 /* fruitDragDrop.swift */,
 				AE3A00CB2A04224700B9F7A3 /* Assets.xcassets */,
 				AE3A00CD2A04224700B9F7A3 /* Preview Content */,
 			);
@@ -140,9 +164,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEED02F52A26AD8B0051A683 /* dropImageView.swift in Sources */,
+				AEF2B4582A3BBE8200070651 /* TextFieldMultiline.swift in Sources */,
+				AE9C80B12A26D6DD00319F27 /* fruitDragDrop.swift in Sources */,
+				AE28CA0F2A26F6F8000141B9 /* videoDrop.swift in Sources */,
+				AEBD14FB2A267E7500AC306D /* BookMarkList.swift in Sources */,
+				AE28CA092A26E930000141B9 /* textDrop.swift in Sources */,
+				AE28CA0B2A26F018000141B9 /* imageDrop.swift in Sources */,
 				AE3A00D62A04228C00B9F7A3 /* DragDrop.swift in Sources */,
 				AE3A00CA2A04224600B9F7A3 /* ContentView.swift in Sources */,
 				AE3A00C82A04224600B9F7A3 /* WorkExperimentApp.swift in Sources */,
+				AE28CA072A26E700000141B9 /* PortraitView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

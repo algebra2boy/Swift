@@ -11,7 +11,12 @@ import SwiftUI
 struct WorkExperimentApp: App {
     var body: some Scene {
         WindowGroup {
-            DragDrop()
+//            PortraitView(portrait: Image("apple") )
+//            textDrop()
+//            imageDrop()
+//            ItemsDrop()
+//            videoDrop()
+            TextFieldMultiline()
         }
     }
 }

@@ -23,6 +23,7 @@ struct ScrambleView: View {
         NavigationView {
             List {
                 Section {
+                    
                     TextField("Enter your word", text: $newWord)
                             .autocapitalization(.none)
                     // add a HStack to make sure the symbol goes horizontally

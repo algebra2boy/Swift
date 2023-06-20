@@ -22,6 +22,7 @@ struct GeometryReader: View {
 //        }
         Text("Hello, world")
     }
+        
 }
 
 struct GeometryReader_Previews: PreviewProvider {

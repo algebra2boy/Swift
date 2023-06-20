@@ -20,12 +20,10 @@ struct AnimationStack: View {
         // make the smooth transition
         .animation(.default, value: enabledColor)
         .foregroundColor(.white)
+        // make corner radius 60 if it is blue
         .clipShape(RoundedRectangle(cornerRadius: enabledColor ? 60 :0 ))
         // make the spring animation
         .animation(.interpolatingSpring(stiffness: 10, damping: 10), value: enabledColor)
-        
-        
-        
     }
 }
 
