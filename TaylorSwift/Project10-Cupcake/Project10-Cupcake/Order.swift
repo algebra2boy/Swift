@@ -9,9 +9,10 @@ import Foundation
 
 class Order: ObservableObject, Codable {
     
-    // add default initializer because we have another custom initializer 
+    // add default initializer because we have another custom initializer
     init() { }
     
+    // special protocol for observableObject to work with codable
     enum CodingKeys: CodingKey {
         case type, quantity, extraFrosting, addSprinkles, name, streetAddress, city, zip
     }

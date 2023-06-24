@@ -17,7 +17,9 @@ struct ContentView: View {
                     Picker("Select your cake type", selection: $order.type) {
                         // we store order.type as a intercer
                         // use indices property of the array that we can then use with as an array index
+                        // Order.types.indices return a range
                         ForEach(Order.types.indices, id: \.self) {
+                            // $0 is an integer
                             Text(Order.types[$0])
                         }
                     }
@@ -26,6 +28,7 @@ struct ContentView: View {
                 }
                 
                 Section {
+                    // animation() adds a smooth effect
                     Toggle("Any special requests?", isOn: $order.specialRequestEnabled.animation())
                     
                     if order.specialRequestEnabled {

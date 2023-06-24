@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AddressView: View {
+    // the iniitalized object being passed from teh previous view
     @ObservedObject var order: Order
     var body: some View {
         Form {
