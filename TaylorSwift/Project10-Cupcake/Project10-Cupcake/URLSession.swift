@@ -20,7 +20,7 @@ struct Result: Codable {
 }
 
 
-struct URLSession: View {
+struct TryURLSession: View {
     @State private var results = [Result]()
     
     var body: some View {
@@ -42,22 +42,23 @@ struct URLSession: View {
             return
         }
         
-//        do {
-//            // Type of expression is ambiguous without more context
-//            let (data, response) = try await URLSession.shared.data(from: url)
-//            if let decodedResponse = try? JSONDecoder().decode(Response.self, from: data) {
-//                results = decodedResponse.results
-//            }
-//
-//            // more code to come
-//        } catch {
-//            print("Invalid data")
-//        }
+        do {
+            // Type of expression is ambiguous without more context
+            let (data, response) = try await URLSession.shared.data(from: url)
+            if let decodedResponse = try? JSONDecoder().decode(Response.self, from: data) {
+                results = decodedResponse.results
+                print(results)
+            }
+
+            // more code to come
+        } catch {
+            print("Invalid data")
+        }
     }
 }
 
-struct URLSession_Previews: PreviewProvider {
+struct TryURLSession_Previews: PreviewProvider {
     static var previews: some View {
-        URLSession()
+        TryURLSession()
     }
 }
