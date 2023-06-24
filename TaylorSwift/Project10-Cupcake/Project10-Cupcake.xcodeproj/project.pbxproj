@@ -15,6 +15,9 @@
 		AE7E284729FAF61200801AA6 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7E284629FAF61200801AA6 /* URLSession.swift */; };
 		AE7E284929FB05A000801AA6 /* LoadAnImageFromServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7E284829FB05A000801AA6 /* LoadAnImageFromServer.swift */; };
 		AE7E284B29FB0A2600801AA6 /* FormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7E284A29FB0A2600801AA6 /* FormData.swift */; };
+		AE9171792A468DA400198884 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9171782A468DA400198884 /* Order.swift */; };
+		AE91717B2A46963000198884 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE91717A2A46963000198884 /* AddressView.swift */; };
+		AE91717D2A469A6500198884 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE91717C2A469A6500198884 /* CheckoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		AE7E284629FAF61200801AA6 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
 		AE7E284829FB05A000801AA6 /* LoadAnImageFromServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadAnImageFromServer.swift; sourceTree = "<group>"; };
 		AE7E284A29FB0A2600801AA6 /* FormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormData.swift; sourceTree = "<group>"; };
+		AE9171782A468DA400198884 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		AE91717A2A46963000198884 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		AE91717C2A469A6500198884 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +66,10 @@
 			isa = PBXGroup;
 			children = (
 				AE7E283429FAEF6D00801AA6 /* Project10_CupcakeApp.swift */,
+				AE9171782A468DA400198884 /* Order.swift */,
 				AE7E283629FAEF6D00801AA6 /* ContentView.swift */,
+				AE91717C2A469A6500198884 /* CheckoutView.swift */,
+				AE91717A2A46963000198884 /* AddressView.swift */,
 				AE7E284429FAF00C00801AA6 /* CodableConformance.swift */,
 				AE7E284629FAF61200801AA6 /* URLSession.swift */,
 				AE7E284829FB05A000801AA6 /* LoadAnImageFromServer.swift */,
@@ -154,7 +163,10 @@
 				AE7E284529FAF00C00801AA6 /* CodableConformance.swift in Sources */,
 				AE7E284729FAF61200801AA6 /* URLSession.swift in Sources */,
 				AE7E283529FAEF6D00801AA6 /* Project10_CupcakeApp.swift in Sources */,
+				AE91717B2A46963000198884 /* AddressView.swift in Sources */,
 				AE7E284B29FB0A2600801AA6 /* FormData.swift in Sources */,
+				AE9171792A468DA400198884 /* Order.swift in Sources */,
+				AE91717D2A469A6500198884 /* CheckoutView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

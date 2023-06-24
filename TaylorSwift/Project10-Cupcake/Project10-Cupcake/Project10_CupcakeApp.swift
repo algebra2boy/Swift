@@ -11,7 +11,7 @@ import SwiftUI
 struct Project10_CupcakeApp: App {
     var body: some Scene {
         WindowGroup {
-            FormData()
+            ContentView()
         }
     }
 }
