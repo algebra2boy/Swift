@@ -8,7 +8,13 @@
 import SwiftUI
 
 struct LandmarkDetail: View {
+    @EnvironmentObject var modelData: ModelData
     var landmark: Landmark
+    
+    var landmarkIndex: Int {
+        modelData.landmarks.firstIndex(where: {$0.id == landmark.id})!
+    }
+    
     var body: some View {
         ScrollView {
             MapView(coordinate: landmark.locationCoordination)
@@ -24,15 +30,19 @@ struct LandmarkDetail: View {
                 .padding(.bottom, -130)
             
             VStack (alignment: .leading){
-                Text(landmark.name)
-                    .font(.title)
+                HStack {
+                    Text(landmark.name)
+                        .font(.title)
+                    // pass it the reference of the enviornment object
+                    // In FavoriteButton, the variale of the reference can be changed, which later can be reflected to the enviornemnt objected because both of them are shared
+                    FavoriteButton(isSet: $modelData.landmarks[landmarkIndex].isFavorite)
+                }
+                
                 HStack {
                     Text(landmark.park)
-                        .font(.subheadline)
                     // A spacer expands to make its containing view use all of the space of its parent view, instead of having its size defined only by its contents
                     Spacer()
                     Text(landmark.state)
-                        .font(.subheadline)
                 }
                 .font(.subheadline)
                 .foregroundColor(.secondary)
@@ -53,6 +63,6 @@ struct LandmarkDetail: View {
 
 struct LandmarkDetail_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkDetail(landmark: landmarks[0])
+        LandmarkDetail(landmark: ModelData().landmarks[0])
     }
 }

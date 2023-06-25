@@ -6,8 +6,13 @@
 //
 
 import Foundation
+import Combine
 
-var landmarks: [Landmark] = load("landmarkData.json")
+// use final becuase there is no subclasses
+final class ModelData: ObservableObject {
+    @Published var landmarks: [Landmark] = load("landmarkData.json")
+}
+
 
 /// accept a filename and return a genric codable data
 func load<T: Codable>(_ filename: String) -> T {

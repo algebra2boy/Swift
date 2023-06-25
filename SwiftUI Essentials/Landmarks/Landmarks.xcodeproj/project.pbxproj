@@ -19,6 +19,7 @@
 		AE7061A32A47E6B200FA77DE /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7061A22A47E6B200FA77DE /* LandmarkRow.swift */; };
 		AE7061A52A47E9C900FA77DE /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7061A42A47E9C900FA77DE /* LandmarkList.swift */; };
 		AE7061A72A47EC5400FA77DE /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7061A62A47EC5400FA77DE /* LandmarkDetail.swift */; };
+		AE7061AA2A48D58B00FA77DE /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7061A92A48D58B00FA77DE /* FavoriteButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,9 +33,10 @@
 		AE7061982A47C05B00FA77DE /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		AE70619A2A47C07F00FA77DE /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		AE70619C2A47DFF900FA77DE /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
-		AE7061A22A47E6B200FA77DE /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LandmarkRow.swift; path = Landmarks/Model/LandmarkRow.swift; sourceTree = SOURCE_ROOT; };
+		AE7061A22A47E6B200FA77DE /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LandmarkRow.swift; path = Landmarks/Views/Landmarks/LandmarkRow.swift; sourceTree = SOURCE_ROOT; };
 		AE7061A42A47E9C900FA77DE /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		AE7061A62A47EC5400FA77DE /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
+		AE7061A92A48D58B00FA77DE /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,12 +90,9 @@
 		AE70619E2A47E2A600FA77DE /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AE7061A22A47E6B200FA77DE /* LandmarkRow.swift */,
-				AE7061A42A47E9C900FA77DE /* LandmarkList.swift */,
-				AE7061A62A47EC5400FA77DE /* LandmarkDetail.swift */,
 				AE25DCC62A477047001EC508 /* ContentView.swift */,
-				AE25DCD22A4797D9001EC508 /* CircleImage.swift */,
-				AE25DCD62A479889001EC508 /* MapView.swift */,
+				AE7061AC2A48D79800FA77DE /* Landmarks */,
+				AE7061AB2A48D74400FA77DE /* Helpers */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -113,6 +112,26 @@
 				AE7061982A47C05B00FA77DE /* landmarkData.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		AE7061AB2A48D74400FA77DE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AE25DCD22A4797D9001EC508 /* CircleImage.swift */,
+				AE25DCD62A479889001EC508 /* MapView.swift */,
+				AE7061A92A48D58B00FA77DE /* FavoriteButton.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AE7061AC2A48D79800FA77DE /* Landmarks */ = {
+			isa = PBXGroup;
+			children = (
+				AE7061A22A47E6B200FA77DE /* LandmarkRow.swift */,
+				AE7061A42A47E9C900FA77DE /* LandmarkList.swift */,
+				AE7061A62A47EC5400FA77DE /* LandmarkDetail.swift */,
+			);
+			path = Landmarks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +208,7 @@
 				AE25DCC72A477047001EC508 /* ContentView.swift in Sources */,
 				AE25DCD72A479889001EC508 /* MapView.swift in Sources */,
 				AE25DCC52A477047001EC508 /* LandmarksApp.swift in Sources */,
+				AE7061AA2A48D58B00FA77DE /* FavoriteButton.swift in Sources */,
 				AE7061A52A47E9C900FA77DE /* LandmarkList.swift in Sources */,
 				AE7061A72A47EC5400FA77DE /* LandmarkDetail.swift in Sources */,
 				AE25DCD32A4797D9001EC508 /* CircleImage.swift in Sources */,
