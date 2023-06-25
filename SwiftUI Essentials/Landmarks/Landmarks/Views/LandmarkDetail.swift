@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  LandmarkDetail.swift
 //  Landmarks
 //
 //  Created by Yongye Tan on 6/24/23.
@@ -7,30 +7,31 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LandmarkDetail: View {
+    var landmark: Landmark
     var body: some View {
-        VStack {
-            MapView()
+        ScrollView {
+            MapView(coordinate: landmark.locationCoordination)
                 .frame(height: 300)
                 // make the map cover the top
                 .ignoresSafeArea(edges: .top)
             
             // To layer the image view on top of the map view, give the image an offset of -130 points vertically, and padding of -130 points from the bottom of the view.
 
-            CircleImage()
+            CircleImage(image: landmark.image)
                 // move circle to top
                 .offset(y: -130)
                 .padding(.bottom, -130)
             
             VStack (alignment: .leading){
-                Text("Turtle Rock")
+                Text(landmark.name)
                     .font(.title)
                 HStack {
-                    Text("Joshua Tree National Park")
+                    Text(landmark.park)
                         .font(.subheadline)
                     // A spacer expands to make its containing view use all of the space of its parent view, instead of having its size defined only by its contents
                     Spacer()
-                    Text("California")
+                    Text(landmark.state)
                         .font(.subheadline)
                 }
                 .font(.subheadline)
@@ -38,21 +39,20 @@ struct ContentView: View {
                 
                 Divider()
                 
-                Text("About Turtle Rock")
+                Text("About \(landmark.name)")
                     .font(.title2)
-                Text("Descriptive text goes here")
+                Text(landmark.description)
             }
             .padding()
             
-            Spacer()
         }
-            
-            
+        .navigationTitle(landmark.name)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LandmarkDetail_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LandmarkDetail(landmark: landmarks[0])
     }
 }

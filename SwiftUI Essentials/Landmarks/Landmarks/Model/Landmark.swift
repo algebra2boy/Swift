@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import CoreLocation
 
-struct Landmark: Codable, Hashable {
+struct Landmark: Codable, Hashable, Identifiable {
     // did not include all the property from the json
     // only get the ones that we need
     var id: Int
