@@ -43,6 +43,8 @@ struct DetailView: View {
             // add .constant make the integer to a binding variable
             RatingView(rating: .constant(Int(book.rating)))
                 .font(.largeTitle)
+            
+            Text(convertDateToString(with: book.time))
         }
         .navigationTitle(book.title ?? "Unknown book")
         .navigationBarTitleDisplayMode(.inline)
@@ -62,6 +64,18 @@ struct DetailView: View {
                 }
             }
         }
+    }
+    
+    func convertDateToString(with date: Date?) -> String {
+        guard let date = date else {
+            return "No time"
+        }
+        
+        let formatter1 = DateFormatter()
+        formatter1.dateStyle = .long
+        
+        let time = formatter1.string(from: date)
+        return time
     }
     
     func deleteBook() {

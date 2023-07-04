@@ -20,7 +20,7 @@ struct AddBookView: View {
     @State private var genre = "Fantasy"
     @State private var review = ""
     
-    let genres = ["Fantasy", "Horror", "Kids", "Mystery",
+    let genres = ["Fantasy", "Kids", "Mystery",
                   "Poetry", "Romance", "Thriller"]
     
     
@@ -59,6 +59,9 @@ struct AddBookView: View {
                         newBook.rating = Int16(rating)
                         newBook.genre = genre
                         newBook.review = review
+                        newBook.time = Date.now
+                        
+                        print(newBook)
                         
                         do {
                             try viewContext.save()

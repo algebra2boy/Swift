@@ -34,7 +34,7 @@ struct ContentView: View {
                                 
                                 Text(book.author ?? "Unknown author")
                                     .foregroundStyle(.secondary)
-                                    .foregroundStyle(book.rating == 1 ? .red: .white )
+                                    .foregroundStyle(book.rating == 1 ? .red: .black )
                             }
                         }
                     }
