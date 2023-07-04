@@ -17,7 +17,7 @@ struct AddBookView: View {
     @State private var title = ""
     @State private var author = ""
     @State private var rating = 3
-    @State private var genre = ""
+    @State private var genre = "Fantasy"
     @State private var review = ""
     
     let genres = ["Fantasy", "Horror", "Kids", "Mystery",
@@ -40,13 +40,10 @@ struct AddBookView: View {
                 }
                 
                 Section {
-                    TextEditor(text: $review)
                     
-                    Picker("Rating", selection: $rating) {
-                        ForEach(0..<6) { num in
-                            Text(String(num))
-                        }
-                    }
+                    TextEditor(text: $review)
+                    RatingView(rating: $rating)
+                    
                 } header: {
                     Text("Write a review")
                 }
@@ -72,6 +69,7 @@ struct AddBookView: View {
                         dismiss()
                         
                     }
+                    .disabled(title.isEmpty || author.isEmpty || review.isEmpty)
                 }
                 
             }
