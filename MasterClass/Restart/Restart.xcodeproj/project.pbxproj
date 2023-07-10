@@ -17,6 +17,7 @@
 		AE1D29D3295E4D9300D0BBE3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1D29D2295E4D9300D0BBE3 /* HomeView.swift */; };
 		AE4B455D2A5A4C5300EDE696 /* CircleGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B455C2A5A4C5300EDE696 /* CircleGroupView.swift */; };
 		AE8A43F72A5B8EC1001537E1 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8A43F62A5B8EC1001537E1 /* AudioPlayer.swift */; };
+		AEAF83342A5C81B100C21285 /* SwiftUI-App-Workbook-Restart.pdf in Resources */ = {isa = PBXBuildFile; fileRef = AEAF83332A5C81B100C21285 /* SwiftUI-App-Workbook-Restart.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		AE1D29D2295E4D9300D0BBE3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		AE4B455C2A5A4C5300EDE696 /* CircleGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleGroupView.swift; sourceTree = "<group>"; };
 		AE8A43F62A5B8EC1001537E1 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		AEAF83332A5C81B100C21285 /* SwiftUI-App-Workbook-Restart.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "SwiftUI-App-Workbook-Restart.pdf"; path = "../../../../../../Desktop/SwiftUI-App-Workbook-Restart.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				AE1D29D0295E4D8300D0BBE3 /* OnBoardingView.swift */,
 				AE8A43F62A5B8EC1001537E1 /* AudioPlayer.swift */,
 				AE1D29D2295E4D9300D0BBE3 /* HomeView.swift */,
+				AEAF83332A5C81B100C21285 /* SwiftUI-App-Workbook-Restart.pdf */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE1D29C7295E49FC00D0BBE3 /* success.m4a in Resources */,
+				AEAF83342A5C81B100C21285 /* SwiftUI-App-Workbook-Restart.pdf in Resources */,
 				AE1D29C6295E49FC00D0BBE3 /* chimeup.mp3 in Resources */,
 				AE1D29BE295E491B00D0BBE3 /* Preview Assets.xcassets in Resources */,
 				AE1D29BB295E491B00D0BBE3 /* Assets.xcassets in Resources */,

@@ -11,6 +11,11 @@
 		AEAF83262A5C740B00C21285 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAF83252A5C740B00C21285 /* ContentView.swift */; };
 		AEAF83282A5C740D00C21285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEAF83272A5C740D00C21285 /* Assets.xcassets */; };
 		AEAF832B2A5C740D00C21285 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEAF832A2A5C740D00C21285 /* Preview Assets.xcassets */; };
+		AEAF83322A5C817900C21285 /* SwiftUI-App-Workbook-Hike.pdf in Resources */ = {isa = PBXBuildFile; fileRef = AEAF83312A5C817900C21285 /* SwiftUI-App-Workbook-Hike.pdf */; };
+		AEAF83382A5C834E00C21285 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAF83372A5C834E00C21285 /* CardView.swift */; };
+		AEAF833B2A5C846C00C21285 /* CustomBackGroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAF833A2A5C846C00C21285 /* CustomBackGroundView.swift */; };
+		AEAF833E2A5C85E900C21285 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAF833D2A5C85E900C21285 /* ColorExtension.swift */; };
+		AEAF83402A5C90A000C21285 /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAF833F2A5C90A000C21285 /* CustomButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		AEAF83252A5C740B00C21285 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AEAF83272A5C740D00C21285 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEAF832A2A5C740D00C21285 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AEAF83312A5C817900C21285 /* SwiftUI-App-Workbook-Hike.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "SwiftUI-App-Workbook-Hike.pdf"; path = "../../../../../Desktop/Hike-App/SwiftUI-App-Workbook-Hike.pdf"; sourceTree = "<group>"; };
+		AEAF83372A5C834E00C21285 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		AEAF833A2A5C846C00C21285 /* CustomBackGroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackGroundView.swift; sourceTree = "<group>"; };
+		AEAF833D2A5C85E900C21285 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		AEAF833F2A5C90A000C21285 /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +62,11 @@
 			isa = PBXGroup;
 			children = (
 				AEAF83232A5C740B00C21285 /* HikeAppApp.swift */,
+				AEAF833C2A5C85D800C21285 /* Utility */,
 				AEAF83252A5C740B00C21285 /* ContentView.swift */,
+				AEAF83392A5C840C00C21285 /* Component */,
 				AEAF83272A5C740D00C21285 /* Assets.xcassets */,
+				AEAF83312A5C817900C21285 /* SwiftUI-App-Workbook-Hike.pdf */,
 				AEAF83292A5C740D00C21285 /* Preview Content */,
 			);
 			path = HikeApp;
@@ -65,6 +78,24 @@
 				AEAF832A2A5C740D00C21285 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AEAF83392A5C840C00C21285 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				AEAF83372A5C834E00C21285 /* CardView.swift */,
+				AEAF833A2A5C846C00C21285 /* CustomBackGroundView.swift */,
+				AEAF833F2A5C90A000C21285 /* CustomButtonView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		AEAF833C2A5C85D800C21285 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				AEAF833D2A5C85E900C21285 /* ColorExtension.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEAF83322A5C817900C21285 /* SwiftUI-App-Workbook-Hike.pdf in Resources */,
 				AEAF832B2A5C740D00C21285 /* Preview Assets.xcassets in Resources */,
 				AEAF83282A5C740D00C21285 /* Assets.xcassets in Resources */,
 			);
@@ -138,7 +170,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEAF83262A5C740B00C21285 /* ContentView.swift in Sources */,
+				AEAF83382A5C834E00C21285 /* CardView.swift in Sources */,
 				AEAF83242A5C740B00C21285 /* HikeAppApp.swift in Sources */,
+				AEAF83402A5C90A000C21285 /* CustomButtonView.swift in Sources */,
+				AEAF833B2A5C846C00C21285 /* CustomBackGroundView.swift in Sources */,
+				AEAF833E2A5C85E900C21285 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +316,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +346,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
