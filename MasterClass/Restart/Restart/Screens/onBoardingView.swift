@@ -17,6 +17,9 @@ struct onBoardingView: View {
     @State private var buttonWidth: Double = UIScreen.main.bounds.width - 80
     @State private var buttonOffSet: CGFloat = 0
     @State private var isAnimating = false
+    @State private var imageOffSet: CGSize = .zero
+    @State private var indicatorOpacity: Double = 1.0
+    @State private var textTitle = "Give."
     
     var body: some View {
         
@@ -30,10 +33,13 @@ struct onBoardingView: View {
                 Spacer()
                 
                 VStack {
-                    Text("Share")
+                    Text(textTitle)
                         .font(.system(size: 60))
                         .fontWeight(.heavy)
                         .foregroundStyle(.white)
+                        .transition(.opacity)
+                        // explictyly tell SwiftUI that this is a different view after the value change
+                        .id(textTitle)
                     
                     Text("""
                     It's not how much we give but
@@ -54,6 +60,10 @@ struct onBoardingView: View {
                     // a circle is on top of another circle (overlapping the views)
                     // this is at the bottom (SwiftUI render this first)
                     CircleGroupView(ShapeColor: .white, ShapeOpacity: 0.3)
+                    // when user drag the picture to left, right goes to right, and vice verse
+                        .offset(x: imageOffSet.width * -1)
+                        .blur(radius: abs(imageOffSet.width / 5))
+                        .animation(.easeOut(duration: 1), value: imageOffSet)
                     
                     // this renders on top of the view
                     Image("character-1")
@@ -61,7 +71,47 @@ struct onBoardingView: View {
                         .scaledToFit()
                         .opacity(isAnimating ? 1 : 0)
                         .animation(.easeOut(duration: 0.5), value: isAnimating)
+                        // move the image in horzontal direction, but in the y direction
+                        .offset(x: imageOffSet.width * 1.2, y: 0)
+                        .rotationEffect(.degrees(Double(imageOffSet.width / 20)))
+                        // provide gesture movement to move the image
+                        .gesture(
+                            DragGesture()
+                                .onChanged { gesture in
+                                    if abs(imageOffSet.width) <= 150 {
+                                        imageOffSet = gesture.translation
+                                        
+                                        // make the symbol disappear if image is being dragged
+                                        withAnimation(.linear(duration: 0.25)) {
+                                            indicatorOpacity = 0
+                                            textTitle = "Give."
+                                        }
+                                    }
+                                }
+                                .onEnded { _ in
+                                    imageOffSet = .zero
+                                    // make the symbol appears again if image is stop being dragged
+                                    withAnimation(.linear(duration: 0.25)) {
+                                        indicatorOpacity = 1
+                                        textTitle = "Share."
+                                    }
+                                }
+                        )
+                        // add animation whenever imageOffSet changeed
+                        .animation(.easeOut(duration: 1), value: imageOffSet)
                 }
+                // the little circle
+                .overlay(alignment: .bottom) {
+                    Image(systemName: "arrow.left.and.right.circle")
+                        .font(.system(size: 44, weight: .ultraLight))
+                        .foregroundStyle(.white)
+                        .offset(y: 20)
+                        .opacity(isAnimating ? 1 : 0)
+                    // delay the animation 2 seconds after isAnimating turns true
+                        .animation(.easeOut(duration: 1).delay(2), value: isAnimating)
+                        .opacity(indicatorOpacity)
+                }
+                
                 
                 Spacer()
                 
