@@ -21,6 +21,9 @@ struct onBoardingView: View {
     @State private var indicatorOpacity: Double = 1.0
     @State private var textTitle = "Give."
     
+    // an object that can be used to make your phone shake a little bit
+    let hapticFeedback = UINotificationFeedbackGenerator()
+    
     var body: some View {
         
         ZStack {
@@ -174,12 +177,16 @@ struct onBoardingView: View {
                                 }
                                 .onEnded { _ in
                                     withAnimation(Animation.easeOut(duration: 0.4)) {
-                                        // past mid-line
+                                        // past mid-line of screen
                                         if buttonOffSet > buttonWidth / 2 {
+                                            // shake the phone
+                                            hapticFeedback.notificationOccurred(.success)
+                                            playSound(sound: "chimeup", type: "mp3")
                                             // move to the edge
                                             buttonOffSet = buttonWidth - 80
                                             isOnboardingViewActive = false
                                         } else {
+                                            hapticFeedback.notificationOccurred(.warning)
                                             buttonOffSet = 0
                                         }
                                     }
@@ -201,7 +208,8 @@ struct onBoardingView: View {
         .onAppear(perform: {
             isAnimating = true
         })
-        
+        // prefer dark mode
+        .preferredColorScheme(.dark)
         
     }
 }
