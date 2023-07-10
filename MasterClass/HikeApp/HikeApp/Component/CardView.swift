@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct CardView: View {
+    // MARK: - PROPERTIES
+    @State private var imageNumber: Int = 1
+    @State private var randomNumber: Int = 1
+    
     var body: some View {
         // MARK: - CARD
         
@@ -60,15 +64,43 @@ struct CardView: View {
                             )
                             .frame(width: 250, height: 250)
                         
-                        Image("image-1")
+                        Image("image-\(imageNumber)")
                             .resizable()
                             .scaledToFit()
+                            // add animation to image whenever imageNumebr is dynamically changed
+                            .animation(.default, value: imageNumber)
                         
-                        // MARK: - FOOTER
                     }
+                    // MARK: - FOOTER
+                
+                    Button {
+                        self.randomImage()
+                    } label: {
+                        Text("Explore More")
+                            .font(.title2)
+                            .fontWeight(.heavy)
+                            .foregroundStyle(
+                                LinearGradient(colors: [.customGreenLight, .customGreenMedium], startPoint: .top, endPoint: .bottom)
+                            )
+                            // add shadow to the background of text
+                            .shadow(color: .black.opacity(0.25), radius: 0.25, x: 1, y: 2)
+                    }
+                    .buttonStyle(GradientButton())
+                
                 }
         } //: CARD
         .frame(width: 320, height: 580)
+    }
+    
+    /// generate a random number
+    func randomImage(){
+        // repeat-while is very similar to do-while
+        // prevent to get the same number as before
+        repeat {
+            randomNumber = Int.random(in: 1...5)
+        } while randomNumber == imageNumber
+                    
+        self.imageNumber  = randomNumber
     }
 }
 
