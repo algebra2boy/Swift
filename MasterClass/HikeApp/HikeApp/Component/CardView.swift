@@ -11,6 +11,7 @@ struct CardView: View {
     // MARK: - PROPERTIES
     @State private var imageNumber: Int = 1
     @State private var randomNumber: Int = 1
+    @State private var isShowingSheet: Bool = false
     
     var body: some View {
         // MARK: - CARD
@@ -37,8 +38,19 @@ struct CardView: View {
                         Button {
                             // Show a sheet 
                             print("The button was pressed")
+                            isShowingSheet.toggle()
                         } label: {
                            CustomButtonView()
+                        }
+                        .sheet(isPresented: $isShowingSheet) {
+                            SettingsView()
+                                // a short little horizontal bar after being dragged
+                                .presentationDragIndicator(.visible)
+                                // how much we should show the sheet
+                                // .medium detent - 50 %
+                                // .large detent  - 100 %
+                                .presentationDetents([.medium, .large])
+                            
                         }
                     }
                     
