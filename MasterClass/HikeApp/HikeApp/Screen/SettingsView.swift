@@ -61,6 +61,35 @@ struct SettingsView: View {
             // MARK: - SECTION: ICONS
             
             // MARK: - SECTION: ABOUT
+            Section {
+                // a container for attaching a label to a value-bearing view
+                // Label on left, and value on right
+//                LabeledContent("Application", value: "Hike")
+                
+                CustomListRowView(rowLabel: "Application", rowIcon: "apps.iphone", rowContent: "Hike", rowTintColor: .blue)
+                
+                CustomListRowView(rowLabel: "Compatibility", rowIcon: "info.circle", rowContent: "iOS, iPadOS", rowTintColor: .pink)
+                
+                CustomListRowView(rowLabel: "Technology", rowIcon: "swift", rowContent: "Swift", rowTintColor: .orange)
+                
+                CustomListRowView(rowLabel: "Developer", rowIcon: "laptopcomputer", rowContent: "Yongye", rowTintColor: .green)
+                
+                CustomListRowView(rowLabel: "Version", rowIcon: "gear", rowContent: "1.0", rowTintColor: .mint)
+                
+                CustomListRowView(rowLabel: "Website", rowIcon: "network", rowTintColor: .purple, rowLabelLink: "github.com/algebra2boy", rowLinkDestination: "https://github.com/algebra2boy")
+                
+            } header: {
+                Text("ABOUT THE APP")
+            } footer: {
+                // do option G to get the symbol
+                HStack {
+                    Spacer()
+                    Text("Copyright © All right reserved")
+                    Spacer()
+                }
+                .padding(.vertical, 10)
+            }
+            
         }
     }
 }
