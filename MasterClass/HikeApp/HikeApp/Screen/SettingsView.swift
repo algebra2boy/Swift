@@ -8,6 +8,20 @@
 import SwiftUI
 
 struct SettingsView: View {
+    // MARK: - PROPERTIES
+    
+    // don't use state here since we are not mutating a varible
+    // to render the view
+    private let alternateAppIcons: [String] = [
+        "AppIcon-MagnifyingGlass",
+        "AppIcon-Map",
+        "AppIcon-Mushroom",
+        "AppIcon-Camera",
+        "AppIcon-Backpack",
+        "AppIcon-Campfire",
+    ]
+    
+    
     var body: some View {
         List {
             // MARK: - SECTION: HEADER
@@ -59,6 +73,47 @@ struct SettingsView: View {
             .listRowSeparator(.hidden) // hide the divider
         
             // MARK: - SECTION: ICONS
+            Section {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack {
+                        // Array.indices returns the Range<Int> of the array
+                        ForEach(alternateAppIcons.indices, id: \.self) { index in
+                            Button {
+                                print("Icon \(alternateAppIcons[index]) was pressed.")
+                                
+                                // change the UI ICON
+                                UIApplication.shared.setAlternateIconName(alternateAppIcons[index]) { error in
+                                    if let error {
+                                        print("Failed request to update the app's icon: \(String(describing: error.localizedDescription))")
+                                    } else {
+                                        print("Success! You have changed the app's icon to \(alternateAppIcons[index])")
+                                    }
+                                }
+                                
+                            } label: {
+                                Image("\(alternateAppIcons[index])-Preview")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 80, height: 80)
+                                    .cornerRadius(20)
+                            }
+                        }
+                        // list view does not particularly work seamlessly
+                        // with buttons, borderless is to avoid issues with
+                        // multiple buttons in a list row
+                        .buttonStyle(.borderless)
+                        
+                    }
+                }
+                Text("Choose your favoriet app icon from collections above.")
+                    // this centers the text
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .multilineTextAlignment(.center)
+                    .foregroundStyle(.secondary)
+                    .font(.footnote)
+            } header: {
+                Text("Alternate Icons")
+            }
             
             // MARK: - SECTION: ABOUT
             Section {
