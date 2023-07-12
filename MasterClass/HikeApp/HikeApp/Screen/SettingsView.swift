@@ -82,9 +82,10 @@ struct SettingsView: View {
                                 print("Icon \(alternateAppIcons[index]) was pressed.")
                                 
                                 // change the UI ICON
+                                // Changes the icon the system displays for the app.
                                 UIApplication.shared.setAlternateIconName(alternateAppIcons[index]) { error in
                                     if let error {
-                                        print("Failed request to update the app's icon: \(String(describing: error.localizedDescription))")
+                                        print("Failed request to update the app's icon: \(error.localizedDescription)")
                                     } else {
                                         print("Success! You have changed the app's icon to \(alternateAppIcons[index])")
                                     }
