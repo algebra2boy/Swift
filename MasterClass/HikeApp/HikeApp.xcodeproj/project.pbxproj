@@ -11,7 +11,6 @@
 		AEAF83262A5C740B00C21285 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAF83252A5C740B00C21285 /* ContentView.swift */; };
 		AEAF83282A5C740D00C21285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEAF83272A5C740D00C21285 /* Assets.xcassets */; };
 		AEAF832B2A5C740D00C21285 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEAF832A2A5C740D00C21285 /* Preview Assets.xcassets */; };
-		AEAF83322A5C817900C21285 /* SwiftUI-App-Workbook-Hike.pdf in Resources */ = {isa = PBXBuildFile; fileRef = AEAF83312A5C817900C21285 /* SwiftUI-App-Workbook-Hike.pdf */; };
 		AEAF83382A5C834E00C21285 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAF83372A5C834E00C21285 /* CardView.swift */; };
 		AEAF833B2A5C846C00C21285 /* CustomBackGroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAF833A2A5C846C00C21285 /* CustomBackGroundView.swift */; };
 		AEAF833E2A5C85E900C21285 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAF833D2A5C85E900C21285 /* ColorExtension.swift */; };
@@ -29,7 +28,6 @@
 		AEAF83252A5C740B00C21285 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AEAF83272A5C740D00C21285 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEAF832A2A5C740D00C21285 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		AEAF83312A5C817900C21285 /* SwiftUI-App-Workbook-Hike.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "SwiftUI-App-Workbook-Hike.pdf"; path = "../../../../../Desktop/Hike-App/SwiftUI-App-Workbook-Hike.pdf"; sourceTree = "<group>"; };
 		AEAF83372A5C834E00C21285 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		AEAF833A2A5C846C00C21285 /* CustomBackGroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackGroundView.swift; sourceTree = "<group>"; };
 		AEAF833D2A5C85E900C21285 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
@@ -77,7 +75,6 @@
 				AEAF833C2A5C85D800C21285 /* Utility */,
 				AEAF83392A5C840C00C21285 /* Component */,
 				AEAF83272A5C740D00C21285 /* Assets.xcassets */,
-				AEAF83312A5C817900C21285 /* SwiftUI-App-Workbook-Hike.pdf */,
 				AEAF83292A5C740D00C21285 /* Preview Content */,
 			);
 			path = HikeApp;
@@ -179,7 +176,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEAF83322A5C817900C21285 /* SwiftUI-App-Workbook-Hike.pdf in Resources */,
 				AEAF832B2A5C740D00C21285 /* Preview Assets.xcassets in Resources */,
 				AEAF83282A5C740D00C21285 /* Assets.xcassets in Resources */,
 			);

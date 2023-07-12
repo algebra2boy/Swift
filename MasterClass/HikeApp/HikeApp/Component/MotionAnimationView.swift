@@ -11,7 +11,7 @@ struct MotionAnimationView: View {
     // MARK: - PROPERTIES
     
     // 6 to 12 random circle
-    @State private var randomCircle: Int = Int.random(in: 6...12)
+    private var randomCircle: Int = Int.random(in: 6...12)
     @State private var isAnimating: Bool = false
     
     var body: some View {
