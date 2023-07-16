@@ -11,6 +11,7 @@
 		AE2D2FE82A648E0500A2A822 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2D2FE72A648E0500A2A822 /* ContentView.swift */; };
 		AE2D2FEA2A648E0600A2A822 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE2D2FE92A648E0600A2A822 /* Assets.xcassets */; };
 		AE2D2FED2A648E0600A2A822 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE2D2FEC2A648E0600A2A822 /* Preview Assets.xcassets */; };
+		AE2D2FF42A648EA200A2A822 /* TextBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2D2FF32A648EA200A2A822 /* TextBootCamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		AE2D2FE72A648E0500A2A822 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AE2D2FE92A648E0600A2A822 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE2D2FEC2A648E0600A2A822 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AE2D2FF32A648EA200A2A822 /* TextBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBootCamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				AE2D2FE52A648E0500A2A822 /* SwiftUIThinkingBootCampApp.swift */,
 				AE2D2FE72A648E0500A2A822 /* ContentView.swift */,
+				AE2D2FF32A648EA200A2A822 /* TextBootCamp.swift */,
 				AE2D2FE92A648E0600A2A822 /* Assets.xcassets */,
 				AE2D2FEB2A648E0600A2A822 /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				AE2D2FE82A648E0500A2A822 /* ContentView.swift in Sources */,
 				AE2D2FE62A648E0500A2A822 /* SwiftUIThinkingBootCampApp.swift in Sources */,
+				AE2D2FF42A648EA200A2A822 /* TextBootCamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
