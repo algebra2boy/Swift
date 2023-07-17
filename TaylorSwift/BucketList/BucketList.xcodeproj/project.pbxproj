@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AEBAEE0B2A65CF4400B17838 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBAEE0A2A65CF4400B17838 /* EditView.swift */; };
+		AEBAEE0B2A65CF4400B17838 /* EditMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBAEE0A2A65CF4400B17838 /* EditMapView.swift */; };
 		AEE8063E2A64B80E0050B73B /* BucketListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8063D2A64B80E0050B73B /* BucketListApp.swift */; };
 		AEE806402A64B80E0050B73B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8063F2A64B80E0050B73B /* ContentView.swift */; };
 		AEE806422A64B80F0050B73B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEE806412A64B80F0050B73B /* Assets.xcassets */; };
@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AEBAEE0A2A65CF4400B17838 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		AEBAEE0A2A65CF4400B17838 /* EditMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMapView.swift; sourceTree = "<group>"; };
 		AEE8063A2A64B80E0050B73B /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEE8063D2A64B80E0050B73B /* BucketListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListApp.swift; sourceTree = "<group>"; };
 		AEE8063F2A64B80E0050B73B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				AEE806572A64D2F60050B73B /* MapView.swift */,
-				AEBAEE0A2A65CF4400B17838 /* EditView.swift */,
+				AEBAEE0A2A65CF4400B17838 /* EditMapView.swift */,
 				AEE806592A64E4480050B73B /* MapLocation.swift */,
 			);
 			path = Project;
@@ -179,7 +179,7 @@
 				AEE8064E2A64B9FD0050B73B /* GetDocumentDirectory.swift in Sources */,
 				AEE806502A64C65C0050B73B /* StateWithEnumViews.swift in Sources */,
 				AEE8065A2A64E4480050B73B /* MapLocation.swift in Sources */,
-				AEBAEE0B2A65CF4400B17838 /* EditView.swift in Sources */,
+				AEBAEE0B2A65CF4400B17838 /* EditMapView.swift in Sources */,
 				AEE806562A64CEC20050B73B /* FaceIDAuthen.swift in Sources */,
 				AEE8064C2A64B82C0050B73B /* ConformanceToComparable.swift in Sources */,
 				AEE8063E2A64B80E0050B73B /* BucketListApp.swift in Sources */,

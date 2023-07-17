@@ -67,13 +67,12 @@ struct MapView: View {
             }
         }
         .sheet(item: $selectedPlace) { place in
-            EditView(location: place)
-//            EditView(location: place) { newLocation in
-//                // find the location where it is currently
-//                if let index = locations.firstIndex(of: place) {
-//                    locations[index] = newLocation
-//                }
-//            }
+            EditMapView(location: place) { newLocation in
+                // find the location where it is currently
+                if let index = locations.firstIndex(of: place) {
+                    locations[index] = newLocation
+                }
+            }
             
         }
     }
