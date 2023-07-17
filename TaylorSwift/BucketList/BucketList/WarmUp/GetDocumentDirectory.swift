@@ -14,6 +14,7 @@ struct GetDocumentDirectory: View {
                 let str = "Testing testing"
                 
                 let url = getDocumentsDirectory().appendingPathComponent("message.txt")
+                print(url)
                 
                 do {
                     try str.write(to: url, atomically: true, encoding: .utf8)
@@ -27,10 +28,7 @@ struct GetDocumentDirectory: View {
     
     func getDocumentsDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        print(paths)
         return paths[0]
     }
-}
-
-#Preview {
-    GetDocumentDirectory()
 }

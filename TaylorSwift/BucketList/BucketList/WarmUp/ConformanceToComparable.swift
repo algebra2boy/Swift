@@ -35,7 +35,3 @@ struct ConformanceToComparable: View {
         users.remove(atOffsets: offsets)
     }
 }
-
-#Preview {
-    ConformanceToComparable()
-}
