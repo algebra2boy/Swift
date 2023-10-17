@@ -18,6 +18,7 @@
 		AEE806562A64CEC20050B73B /* FaceIDAuthen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE806552A64CEC20050B73B /* FaceIDAuthen.swift */; };
 		AEE806582A64D2F60050B73B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE806572A64D2F60050B73B /* MapView.swift */; };
 		AEE8065A2A64E4480050B73B /* MapLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE806592A64E4480050B73B /* MapLocation.swift */; };
+		AEF17A9F2A65EB1400389BFE /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF17A9E2A65EB1400389BFE /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		AEE806552A64CEC20050B73B /* FaceIDAuthen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDAuthen.swift; sourceTree = "<group>"; };
 		AEE806572A64D2F60050B73B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		AEE806592A64E4480050B73B /* MapLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocation.swift; sourceTree = "<group>"; };
+		AEF17A9E2A65EB1400389BFE /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				AEE806572A64D2F60050B73B /* MapView.swift */,
 				AEBAEE0A2A65CF4400B17838 /* EditMapView.swift */,
 				AEE806592A64E4480050B73B /* MapLocation.swift */,
+				AEF17A9E2A65EB1400389BFE /* Result.swift */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				AEE806502A64C65C0050B73B /* StateWithEnumViews.swift in Sources */,
 				AEE8065A2A64E4480050B73B /* MapLocation.swift in Sources */,
 				AEBAEE0B2A65CF4400B17838 /* EditMapView.swift in Sources */,
+				AEF17A9F2A65EB1400389BFE /* Result.swift in Sources */,
 				AEE806562A64CEC20050B73B /* FaceIDAuthen.swift in Sources */,
 				AEE8064C2A64B82C0050B73B /* ConformanceToComparable.swift in Sources */,
 				AEE8063E2A64B80E0050B73B /* BucketListApp.swift in Sources */,

@@ -17,7 +17,8 @@ struct WorkExperimentApp: App {
 //            ItemsDrop()
 //            videoDrop()
 //            TextFieldMultiline()
-            TextToSpeech()
+//            TextToSpeech()
+            TapGestureTesting()
         }
     }
 }

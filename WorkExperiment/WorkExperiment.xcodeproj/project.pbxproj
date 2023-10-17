@@ -17,6 +17,11 @@
 		AE3A00CC2A04224700B9F7A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE3A00CB2A04224700B9F7A3 /* Assets.xcassets */; };
 		AE3A00CF2A04224700B9F7A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE3A00CE2A04224700B9F7A3 /* Preview Assets.xcassets */; };
 		AE3A00D62A04228C00B9F7A3 /* DragDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3A00D52A04228C00B9F7A3 /* DragDrop.swift */; };
+		AE4988092A6ED872002DD295 /* UserDefaultPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4988082A6ED872002DD295 /* UserDefaultPlaying.swift */; };
+		AE5E29C32AD8F05E00BE73A7 /* TapGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E29C22AD8F05E00BE73A7 /* TapGesture.swift */; };
+		AE65D1882ADA17F200193399 /* KeyBoardShortCut.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE65D1872ADA17F200193399 /* KeyBoardShortCut.swift */; };
+		AE7E07352ADDB4A3009CAD9C /* LongPressingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7E07342ADDB4A3009CAD9C /* LongPressingView.swift */; };
+		AE7E07532ADE1735009CAD9C /* MovieAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7E07522ADE1735009CAD9C /* MovieAPI.swift */; };
 		AE9C80B12A26D6DD00319F27 /* fruitDragDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9C80B02A26D6DD00319F27 /* fruitDragDrop.swift */; };
 		AEBD14FB2A267E7500AC306D /* BookMarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBD14FA2A267E7500AC306D /* BookMarkList.swift */; };
 		AEED02F52A26AD8B0051A683 /* dropImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEED02F42A26AD8B0051A683 /* dropImageView.swift */; };
@@ -35,6 +40,11 @@
 		AE3A00CB2A04224700B9F7A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE3A00CE2A04224700B9F7A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AE3A00D52A04228C00B9F7A3 /* DragDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDrop.swift; sourceTree = "<group>"; };
+		AE4988082A6ED872002DD295 /* UserDefaultPlaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultPlaying.swift; sourceTree = "<group>"; };
+		AE5E29C22AD8F05E00BE73A7 /* TapGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapGesture.swift; sourceTree = "<group>"; };
+		AE65D1872ADA17F200193399 /* KeyBoardShortCut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardShortCut.swift; sourceTree = "<group>"; };
+		AE7E07342ADDB4A3009CAD9C /* LongPressingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressingView.swift; sourceTree = "<group>"; };
+		AE7E07522ADE1735009CAD9C /* MovieAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAPI.swift; sourceTree = "<group>"; };
 		AE9C80B02A26D6DD00319F27 /* fruitDragDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fruitDragDrop.swift; sourceTree = "<group>"; };
 		AEBD14FA2A267E7500AC306D /* BookMarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkList.swift; sourceTree = "<group>"; };
 		AEED02F42A26AD8B0051A683 /* dropImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dropImageView.swift; sourceTree = "<group>"; };
@@ -79,10 +89,15 @@
 				AE28CA062A26E700000141B9 /* PortraitView.swift */,
 				AE3A00C92A04224600B9F7A3 /* ContentView.swift */,
 				AE3A00D52A04228C00B9F7A3 /* DragDrop.swift */,
+				AE4988082A6ED872002DD295 /* UserDefaultPlaying.swift */,
+				AE5E29C22AD8F05E00BE73A7 /* TapGesture.swift */,
 				AEED02F42A26AD8B0051A683 /* dropImageView.swift */,
 				AEBD14FA2A267E7500AC306D /* BookMarkList.swift */,
 				AE28CA082A26E930000141B9 /* textDrop.swift */,
 				AE9C80B02A26D6DD00319F27 /* fruitDragDrop.swift */,
+				AE7E07342ADDB4A3009CAD9C /* LongPressingView.swift */,
+				AE7E07522ADE1735009CAD9C /* MovieAPI.swift */,
+				AE65D1872ADA17F200193399 /* KeyBoardShortCut.swift */,
 				AE3A00CB2A04224700B9F7A3 /* Assets.xcassets */,
 				AE3A00CD2A04224700B9F7A3 /* Preview Content */,
 			);
@@ -171,14 +186,19 @@
 				AE1DE6162A4CE06900B5877E /* TextToSpeech.swift in Sources */,
 				AEF2B4582A3BBE8200070651 /* TextFieldMultiline.swift in Sources */,
 				AE9C80B12A26D6DD00319F27 /* fruitDragDrop.swift in Sources */,
+				AE4988092A6ED872002DD295 /* UserDefaultPlaying.swift in Sources */,
+				AE7E07532ADE1735009CAD9C /* MovieAPI.swift in Sources */,
 				AE28CA0F2A26F6F8000141B9 /* videoDrop.swift in Sources */,
 				AEBD14FB2A267E7500AC306D /* BookMarkList.swift in Sources */,
+				AE7E07352ADDB4A3009CAD9C /* LongPressingView.swift in Sources */,
 				AE28CA092A26E930000141B9 /* textDrop.swift in Sources */,
 				AE28CA0B2A26F018000141B9 /* imageDrop.swift in Sources */,
+				AE65D1882ADA17F200193399 /* KeyBoardShortCut.swift in Sources */,
 				AE3A00D62A04228C00B9F7A3 /* DragDrop.swift in Sources */,
 				AE3A00CA2A04224600B9F7A3 /* ContentView.swift in Sources */,
 				AE3A00C82A04224600B9F7A3 /* WorkExperimentApp.swift in Sources */,
 				AE28CA072A26E700000141B9 /* PortraitView.swift in Sources */,
+				AE5E29C32AD8F05E00BE73A7 /* TapGesture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +335,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,6 +365,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
