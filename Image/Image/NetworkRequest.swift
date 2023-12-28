@@ -12,7 +12,7 @@ struct NetworkRequest: View {
     @State private var data = ""
     
     func fetchServerData() async throws -> String? {
-        let url = URL(string: "http://localhost:3000/testing")!
+        let url = URL(string: "http://localhost:6000/testing")!
         
         // `URLSession` shared instance is used here for simplicity.
         let (data, _) = try await URLSession.shared.data(from: url)

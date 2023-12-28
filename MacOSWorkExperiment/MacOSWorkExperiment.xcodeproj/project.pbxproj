@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE98EDD92B14E1D900C0AFE4 /* TableTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98EDD82B14E1D900C0AFE4 /* TableTesting.swift */; };
 		AEC64BEF2A3C039900FCD3F0 /* MacOSWorkExperimentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC64BEE2A3C039900FCD3F0 /* MacOSWorkExperimentApp.swift */; };
 		AEC64BF12A3C039900FCD3F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC64BF02A3C039900FCD3F0 /* ContentView.swift */; };
 		AEC64BF32A3C039A00FCD3F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC64BF22A3C039A00FCD3F0 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE98EDD82B14E1D900C0AFE4 /* TableTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTesting.swift; sourceTree = "<group>"; };
 		AEC64BEB2A3C039900FCD3F0 /* MacOSWorkExperiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacOSWorkExperiment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC64BEE2A3C039900FCD3F0 /* MacOSWorkExperimentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacOSWorkExperimentApp.swift; sourceTree = "<group>"; };
 		AEC64BF02A3C039900FCD3F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			children = (
 				AEC64BEE2A3C039900FCD3F0 /* MacOSWorkExperimentApp.swift */,
 				AEC64BF02A3C039900FCD3F0 /* ContentView.swift */,
+				AE98EDD82B14E1D900C0AFE4 /* TableTesting.swift */,
 				AEC64BF22A3C039A00FCD3F0 /* Assets.xcassets */,
 				AEC64BF72A3C039A00FCD3F0 /* MacOSWorkExperiment.entitlements */,
 				AEC64BF42A3C039A00FCD3F0 /* Preview Content */,
@@ -141,6 +144,7 @@
 			files = (
 				AEC64BF12A3C039900FCD3F0 /* ContentView.swift in Sources */,
 				AEC64BEF2A3C039900FCD3F0 /* MacOSWorkExperimentApp.swift in Sources */,
+				AE98EDD92B14E1D900C0AFE4 /* TableTesting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +270,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MacOSWorkExperiment/MacOSWorkExperiment.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -279,6 +284,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = algebra2boy.MacOSWorkExperiment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -293,6 +299,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MacOSWorkExperiment/MacOSWorkExperiment.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -306,6 +313,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = algebra2boy.MacOSWorkExperiment;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -11,7 +11,8 @@ import SwiftUI
 struct MacOSWorkExperimentApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TableTesting(selectedPerson: .constant(Set()))
+                
         }
     }
 }
