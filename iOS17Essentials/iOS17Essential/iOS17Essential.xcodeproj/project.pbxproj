@@ -15,6 +15,7 @@
 		AEA26E502B3CC11800B3B6BF /* ObservationEnviornmentCaseStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA26E4F2B3CC11800B3B6BF /* ObservationEnviornmentCaseStudy.swift */; };
 		AEA26E522B3CD32B00B3B6BF /* StorageDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA26E512B3CD32B00B3B6BF /* StorageDemo.swift */; };
 		AEA26E542B3CF7E900B3B6BF /* ListCaseStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA26E532B3CF7E900B3B6BF /* ListCaseStudy.swift */; };
+		AEBE3E0D2B3E77A800278BB0 /* ListNavDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE3E0C2B3E77A800278BB0 /* ListNavDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		AEA26E4F2B3CC11800B3B6BF /* ObservationEnviornmentCaseStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationEnviornmentCaseStudy.swift; sourceTree = "<group>"; };
 		AEA26E512B3CD32B00B3B6BF /* StorageDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageDemo.swift; sourceTree = "<group>"; };
 		AEA26E532B3CF7E900B3B6BF /* ListCaseStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCaseStudy.swift; sourceTree = "<group>"; };
+		AEBE3E0C2B3E77A800278BB0 /* ListNavDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNavDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		AEA26E3D2B3C9E0800B3B6BF /* iOS17Essential */ = {
 			isa = PBXGroup;
 			children = (
+				AEBE3E0C2B3E77A800278BB0 /* ListNavDemo.swift */,
 				AEA26E3E2B3C9E0800B3B6BF /* iOS17EssentialApp.swift */,
 				AEA26E532B3CF7E900B3B6BF /* ListCaseStudy.swift */,
 				AEA26E402B3C9E0800B3B6BF /* ContentView.swift */,
@@ -153,6 +156,7 @@
 			files = (
 				AEA26E412B3C9E0800B3B6BF /* ContentView.swift in Sources */,
 				AEA26E3F2B3C9E0800B3B6BF /* iOS17EssentialApp.swift in Sources */,
+				AEBE3E0D2B3E77A800278BB0 /* ListNavDemo.swift in Sources */,
 				AEA26E502B3CC11800B3B6BF /* ObservationEnviornmentCaseStudy.swift in Sources */,
 				AEA26E542B3CF7E900B3B6BF /* ListCaseStudy.swift in Sources */,
 				AEA26E4E2B3C9E2700B3B6BF /* TabViewCaseStudy.swift in Sources */,
