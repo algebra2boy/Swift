@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE1C7AA92B3FA70000FF1668 /* NavSplitDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1C7AA82B3FA70000FF1668 /* NavSplitDemo.swift */; };
+		AE6C2B472B3FE4B4000277A9 /* OnHoverCaseStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6C2B462B3FE4B4000277A9 /* OnHoverCaseStudy.swift */; };
+		AE6C2B492B408E0F000277A9 /* RenameButtonCaseStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6C2B482B408E0F000277A9 /* RenameButtonCaseStudy.swift */; };
 		AEA26E3F2B3C9E0800B3B6BF /* iOS17EssentialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA26E3E2B3C9E0800B3B6BF /* iOS17EssentialApp.swift */; };
 		AEA26E412B3C9E0800B3B6BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA26E402B3C9E0800B3B6BF /* ContentView.swift */; };
 		AEA26E432B3C9E0900B3B6BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA26E422B3C9E0900B3B6BF /* Assets.xcassets */; };
@@ -16,9 +19,13 @@
 		AEA26E522B3CD32B00B3B6BF /* StorageDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA26E512B3CD32B00B3B6BF /* StorageDemo.swift */; };
 		AEA26E542B3CF7E900B3B6BF /* ListCaseStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA26E532B3CF7E900B3B6BF /* ListCaseStudy.swift */; };
 		AEBE3E0D2B3E77A800278BB0 /* ListNavDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE3E0C2B3E77A800278BB0 /* ListNavDemo.swift */; };
+		AEBE3E0F2B3E8A2A00278BB0 /* NavigationSplitViewCaseStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE3E0E2B3E8A2A00278BB0 /* NavigationSplitViewCaseStudy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE1C7AA82B3FA70000FF1668 /* NavSplitDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavSplitDemo.swift; sourceTree = "<group>"; };
+		AE6C2B462B3FE4B4000277A9 /* OnHoverCaseStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnHoverCaseStudy.swift; sourceTree = "<group>"; };
+		AE6C2B482B408E0F000277A9 /* RenameButtonCaseStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenameButtonCaseStudy.swift; sourceTree = "<group>"; };
 		AEA26E3B2B3C9E0800B3B6BF /* iOS17Essential.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS17Essential.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEA26E3E2B3C9E0800B3B6BF /* iOS17EssentialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS17EssentialApp.swift; sourceTree = "<group>"; };
 		AEA26E402B3C9E0800B3B6BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -30,6 +37,7 @@
 		AEA26E512B3CD32B00B3B6BF /* StorageDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageDemo.swift; sourceTree = "<group>"; };
 		AEA26E532B3CF7E900B3B6BF /* ListCaseStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCaseStudy.swift; sourceTree = "<group>"; };
 		AEBE3E0C2B3E77A800278BB0 /* ListNavDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNavDemo.swift; sourceTree = "<group>"; };
+		AEBE3E0E2B3E8A2A00278BB0 /* NavigationSplitViewCaseStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationSplitViewCaseStudy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 			isa = PBXGroup;
 			children = (
 				AEBE3E0C2B3E77A800278BB0 /* ListNavDemo.swift */,
+				AE6C2B462B3FE4B4000277A9 /* OnHoverCaseStudy.swift */,
+				AE6C2B482B408E0F000277A9 /* RenameButtonCaseStudy.swift */,
+				AEBE3E0E2B3E8A2A00278BB0 /* NavigationSplitViewCaseStudy.swift */,
+				AE1C7AA82B3FA70000FF1668 /* NavSplitDemo.swift */,
 				AEA26E3E2B3C9E0800B3B6BF /* iOS17EssentialApp.swift */,
 				AEA26E532B3CF7E900B3B6BF /* ListCaseStudy.swift */,
 				AEA26E402B3C9E0800B3B6BF /* ContentView.swift */,
@@ -154,11 +166,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE1C7AA92B3FA70000FF1668 /* NavSplitDemo.swift in Sources */,
+				AE6C2B472B3FE4B4000277A9 /* OnHoverCaseStudy.swift in Sources */,
 				AEA26E412B3C9E0800B3B6BF /* ContentView.swift in Sources */,
 				AEA26E3F2B3C9E0800B3B6BF /* iOS17EssentialApp.swift in Sources */,
 				AEBE3E0D2B3E77A800278BB0 /* ListNavDemo.swift in Sources */,
 				AEA26E502B3CC11800B3B6BF /* ObservationEnviornmentCaseStudy.swift in Sources */,
 				AEA26E542B3CF7E900B3B6BF /* ListCaseStudy.swift in Sources */,
+				AEBE3E0F2B3E8A2A00278BB0 /* NavigationSplitViewCaseStudy.swift in Sources */,
+				AE6C2B492B408E0F000277A9 /* RenameButtonCaseStudy.swift in Sources */,
 				AEA26E4E2B3C9E2700B3B6BF /* TabViewCaseStudy.swift in Sources */,
 				AEA26E522B3CD32B00B3B6BF /* StorageDemo.swift in Sources */,
 			);

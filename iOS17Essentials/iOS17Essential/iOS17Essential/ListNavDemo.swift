@@ -21,7 +21,7 @@ struct ListNavDemo: View {
                     // nav link is used
                     NavigationLink(value: fruit) {
                         ListCell(fruit: fruit)
-                    }
+                    } 
                 }
                 .onDelete(perform: deleteItems)
                 .onMove(perform: moveItems)
@@ -34,14 +34,14 @@ struct ListNavDemo: View {
             }
             .navigationTitle("Fruit Store")
             .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    NavigationLink(value: "Add Fruit") {
-                        Text("Add")
-                    }
-                }
-                ToolbarItem(placement: .topBarLeading) {
-                    EditButton()
-                }
+//                ToolbarItem(placement: .topBarTrailing) {
+//                    NavigationLink(value: "Add Fruit") {
+//                        Text("Add")
+//                    }
+//                }
+//                ToolbarItem(placement: .topBarLeading) {
+//                    EditButton()
+//                }
             }
         }
     }

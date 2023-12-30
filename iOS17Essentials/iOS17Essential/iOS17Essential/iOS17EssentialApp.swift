@@ -11,7 +11,7 @@ import SwiftUI
 struct iOS17EssentialApp: App {
     var body: some Scene {
         WindowGroup {
-            ListNavDemo()
+            RenameButtonCaseStudy()
         }
     }
 }
