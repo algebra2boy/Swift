@@ -17,6 +17,7 @@
 		AE6C2B552B4112EB000277A9 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6C2B542B4112EB000277A9 /* ResultsView.swift */; };
 		AE6C2B582B421C6B000277A9 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6C2B572B421C6B000277A9 /* AnimationView.swift */; };
 		AE6C2B5A2B421F2B000277A9 /* GestureDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6C2B592B421F2B000277A9 /* GestureDemo.swift */; };
+		AE6C2B5C2B423567000277A9 /* ProgressViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6C2B5B2B423567000277A9 /* ProgressViewDemo.swift */; };
 		AEA26E3F2B3C9E0800B3B6BF /* iOS17EssentialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA26E3E2B3C9E0800B3B6BF /* iOS17EssentialApp.swift */; };
 		AEA26E412B3C9E0800B3B6BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA26E402B3C9E0800B3B6BF /* ContentView.swift */; };
 		AEA26E432B3C9E0900B3B6BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA26E422B3C9E0900B3B6BF /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		AE6C2B542B4112EB000277A9 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 		AE6C2B572B421C6B000277A9 /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
 		AE6C2B592B421F2B000277A9 /* GestureDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureDemo.swift; sourceTree = "<group>"; };
+		AE6C2B5B2B423567000277A9 /* ProgressViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewDemo.swift; sourceTree = "<group>"; };
 		AEA26E3B2B3C9E0800B3B6BF /* iOS17Essential.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS17Essential.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEA26E3E2B3C9E0800B3B6BF /* iOS17EssentialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS17EssentialApp.swift; sourceTree = "<group>"; };
 		AEA26E402B3C9E0800B3B6BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				AE6C2B592B421F2B000277A9 /* GestureDemo.swift */,
+				AE6C2B5B2B423567000277A9 /* ProgressViewDemo.swift */,
 				AEBE3E0C2B3E77A800278BB0 /* ListNavDemo.swift */,
 				AE6C2B462B3FE4B4000277A9 /* OnHoverCaseStudy.swift */,
 				AE6C2B482B408E0F000277A9 /* RenameButtonCaseStudy.swift */,
@@ -207,6 +210,7 @@
 				AE6C2B472B3FE4B4000277A9 /* OnHoverCaseStudy.swift in Sources */,
 				AEA26E412B3C9E0800B3B6BF /* ContentView.swift in Sources */,
 				AE6C2B4D2B40F415000277A9 /* CoreDataDemo.swift in Sources */,
+				AE6C2B5C2B423567000277A9 /* ProgressViewDemo.swift in Sources */,
 				AEA26E3F2B3C9E0800B3B6BF /* iOS17EssentialApp.swift in Sources */,
 				AEBE3E0D2B3E77A800278BB0 /* ListNavDemo.swift in Sources */,
 				AEA26E502B3CC11800B3B6BF /* ObservationEnviornmentCaseStudy.swift in Sources */,

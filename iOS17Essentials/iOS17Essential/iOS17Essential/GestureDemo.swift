@@ -55,10 +55,10 @@ struct GestureStateDemo: View {
     
     var body: some View {
         
-        let drag = DragGesture()
-            .updating($offset) { dragValue, state, transaction in
-                state = dragValue.translation
-            }
+//        let drag = DragGesture()
+//            .updating($offset) { dragValue, state, transaction in
+//                state = dragValue.translation
+//            }
         
         let longPressBeforeDrag = LongPressGesture(minimumDuration: 2.0)
             .onEnded( { _ in
