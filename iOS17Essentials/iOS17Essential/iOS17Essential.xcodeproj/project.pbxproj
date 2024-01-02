@@ -28,6 +28,8 @@
 		AEA26E542B3CF7E900B3B6BF /* ListCaseStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA26E532B3CF7E900B3B6BF /* ListCaseStudy.swift */; };
 		AEBE3E0D2B3E77A800278BB0 /* ListNavDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE3E0C2B3E77A800278BB0 /* ListNavDemo.swift */; };
 		AEBE3E0F2B3E8A2A00278BB0 /* NavigationSplitViewCaseStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE3E0E2B3E8A2A00278BB0 /* NavigationSplitViewCaseStudy.swift */; };
+		AEF27CAF2B43932300DF6CCA /* SwiftDataCaseStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF27CAE2B43932300DF6CCA /* SwiftDataCaseStudy.swift */; };
+		AEF27CB12B439B6200DF6CCA /* ChartDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF27CB02B439B6200DF6CCA /* ChartDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		AEA26E532B3CF7E900B3B6BF /* ListCaseStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCaseStudy.swift; sourceTree = "<group>"; };
 		AEBE3E0C2B3E77A800278BB0 /* ListNavDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNavDemo.swift; sourceTree = "<group>"; };
 		AEBE3E0E2B3E8A2A00278BB0 /* NavigationSplitViewCaseStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationSplitViewCaseStudy.swift; sourceTree = "<group>"; };
+		AEF27CAE2B43932300DF6CCA /* SwiftDataCaseStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataCaseStudy.swift; sourceTree = "<group>"; };
+		AEF27CB02B439B6200DF6CCA /* ChartDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 				AE6C2B4A2B40E1BE000277A9 /* GridRowDemo.swift */,
 				AE6C2B512B40F543000277A9 /* CoreData */,
 				AE6C2B562B421C56000277A9 /* AnimationDemo */,
+				AEF27CAD2B43930B00DF6CCA /* SwiftChart */,
 				AEBE3E0E2B3E8A2A00278BB0 /* NavigationSplitViewCaseStudy.swift */,
 				AE1C7AA82B3FA70000FF1668 /* NavSplitDemo.swift */,
 				AEA26E3E2B3C9E0800B3B6BF /* iOS17EssentialApp.swift */,
@@ -134,6 +139,15 @@
 				AEA26E462B3C9E0900B3B6BF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AEF27CAD2B43930B00DF6CCA /* SwiftChart */ = {
+			isa = PBXGroup;
+			children = (
+				AEF27CAE2B43932300DF6CCA /* SwiftDataCaseStudy.swift */,
+				AEF27CB02B439B6200DF6CCA /* ChartDemo.swift */,
+			);
+			path = SwiftChart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEF27CB12B439B6200DF6CCA /* ChartDemo.swift in Sources */,
 				AE1C7AA92B3FA70000FF1668 /* NavSplitDemo.swift in Sources */,
 				AE6C2B472B3FE4B4000277A9 /* OnHoverCaseStudy.swift in Sources */,
 				AEA26E412B3C9E0800B3B6BF /* ContentView.swift in Sources */,
@@ -221,6 +236,7 @@
 				AE6C2B552B4112EB000277A9 /* ResultsView.swift in Sources */,
 				AE6C2B532B40F576000277A9 /* Persistence.swift in Sources */,
 				AE6C2B492B408E0F000277A9 /* RenameButtonCaseStudy.swift in Sources */,
+				AEF27CAF2B43932300DF6CCA /* SwiftDataCaseStudy.swift in Sources */,
 				AEA26E4E2B3C9E2700B3B6BF /* TabViewCaseStudy.swift in Sources */,
 				AEA26E522B3CD32B00B3B6BF /* StorageDemo.swift in Sources */,
 				AE6C2B4B2B40E1BE000277A9 /* GridRowDemo.swift in Sources */,
