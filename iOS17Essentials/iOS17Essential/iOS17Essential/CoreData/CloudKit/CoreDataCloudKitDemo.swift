@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CoreDataCloudKitDemo: View {
     
-    let persistenceController = PersistenceController.shared
+    let persistenceController = CloudKitPersistence.shared
     
     var body: some View {
         CoreDataCloudKitView()

@@ -39,6 +39,7 @@
 		AE1480FA2B44A5B900B9E8C3 /* CoreDataCloudKitDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataCloudKitDemo.swift; sourceTree = "<group>"; };
 		AE1480FC2B44A5EE00B9E8C3 /* CloudKitPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitPersistence.swift; sourceTree = "<group>"; };
 		AE1480FE2B44A61600B9E8C3 /* CloudKitResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitResultView.swift; sourceTree = "<group>"; };
+		AE1481002B44AAF000B9E8C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AE1C7AA82B3FA70000FF1668 /* NavSplitDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavSplitDemo.swift; sourceTree = "<group>"; };
 		AE6C2B462B3FE4B4000277A9 /* OnHoverCaseStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnHoverCaseStudy.swift; sourceTree = "<group>"; };
 		AE6C2B482B408E0F000277A9 /* RenameButtonCaseStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenameButtonCaseStudy.swift; sourceTree = "<group>"; };
@@ -126,6 +127,7 @@
 		AEA26E3D2B3C9E0800B3B6BF /* iOS17Essential */ = {
 			isa = PBXGroup;
 			children = (
+				AE1481002B44AAF000B9E8C3 /* Info.plist */,
 				AE6C2B592B421F2B000277A9 /* GestureDemo.swift */,
 				AE6C2B5B2B423567000277A9 /* ProgressViewDemo.swift */,
 				AEBE3E0C2B3E77A800278BB0 /* ListNavDemo.swift */,
@@ -394,6 +396,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iOS17Essential/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -432,6 +435,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iOS17Essential/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
