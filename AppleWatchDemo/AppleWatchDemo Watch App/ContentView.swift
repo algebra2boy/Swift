@@ -19,10 +19,10 @@ struct ContentView: View {
             ScrollView {
                 
                 HStack {
-                    Spacer()
                     NavigationLink {
                         QuoteListView(quotes: $quotes)
                     } label: {
+                        Spacer()
                         Image(systemName: "arrow.right")
                     }
                 }
@@ -35,7 +35,9 @@ struct ContentView: View {
                             .frame(width: 50)
                         
                         Button {
-                            selectedQuote = quotes.randomElement()!
+                            withAnimation {
+                                selectedQuote = quotes.randomElement()!
+                            }
                         } label: {
                             Image(systemName: "questionmark")
                         }
@@ -45,16 +47,14 @@ struct ContentView: View {
                         .font(.system(size: 30))
                     }
                     
-                    VStack(alignment: .leading) {
+                    VStack(alignment: .center, spacing: 5) {
                         Text(selectedQuote?.quote ?? "click on question mark")
                             .multilineTextAlignment(.leading)
                             .font(.body)
                         
-                        HStack {
-                            Spacer()
-                            Text(selectedQuote?.author ?? "")
-                                .font(.footnote)
-                        }
+                        Text(selectedQuote?.author ?? "")
+                            .font(.footnote)
+                        
                     }
                     
                 }
@@ -62,9 +62,7 @@ struct ContentView: View {
                 
             }
             
-            
         }
-        .padding()
     }
 }
 
