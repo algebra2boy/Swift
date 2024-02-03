@@ -9,7 +9,7 @@ import SwiftUI
 
 struct QuoteListView: View {
     
-    @Binding var quotes: [Quote]
+    let quotes: [Quote]
     
     var body: some View {
         VStack {
@@ -37,7 +37,7 @@ struct QuoteListView: View {
 
 #Preview {
     
-    @State var quotes: [Quote] = Quote.quotes
+    let quotes: [Quote] = Quote.quotes
     
-    return QuoteListView(quotes: $quotes)
+    return QuoteListView(quotes: quotes)
 }

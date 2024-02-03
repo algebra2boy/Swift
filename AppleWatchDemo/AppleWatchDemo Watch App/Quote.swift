@@ -32,6 +32,10 @@ struct Quote: Identifiable, Hashable {
         Quote(author: "马斯克", quote: "激情和信念能够克服一切。"),
         Quote(author: "马斯克", quote: "要不断超越自己，才能取得卓越成就。"),
         Quote(author: "马斯克", quote: "不要害怕失败，失败是成功之母。"),
+        Quote(author: "马斯克", quote: "首先要先相信一件事是有可能的，然后可能性才会发生。"),
+        Quote(author: "马斯克", quote: "如果一件事情够重要，那么即便所有条件都与你作对，你仍应该要做。"),
+        Quote(author: "马斯克", quote: "失败很正常，如果没有经历失败，表示你还不夠创新。"),
+        
         
         // Quotes from 乔布斯
         Quote(author: "乔布斯", quote: "创新是区分普通人和优秀人的标志。"),
@@ -43,9 +47,9 @@ struct Quote: Identifiable, Hashable {
         // Quotes from 孙子兵法
         Quote(author: "孙子兵法", quote: "知己知彼，百战不殆。"),
         Quote(author: "孙子兵法", quote: "兵不厌诈。"),
-        Quote(author: "孙子兵法", quote: "先发制人，制胜于战。"),
-        Quote(author: "孙子兵法", quote: "速战速决，节省资源。"),
-        Quote(author: "孙子兵法", quote: "凡战必胜，无战必败。"),
+        Quote(author: "孙子兵法", quote: "先发制人，后发制于人。"),
+        Quote(author: "孙子兵法", quote: "速战速决，久战兵钝。"),
+        Quote(author: "孙子兵法", quote: "攻其无备，出其不意。"),
         
         // Additional quotes
         Quote(author: "王阳明", quote: "万事开头难，只要肯下功夫，事事能成功。"),
@@ -58,7 +62,6 @@ struct Quote: Identifiable, Hashable {
         Quote(author: "李威", quote: "每一次的失败都是迈向成功的一步。"),
         Quote(author: "张小娴", quote: "命运掌握在自己手中。"),
         Quote(author: "雷军", quote: "坚持和耐心是取得成功的关键。"),
-        Quote(author: "陈世峰", quote: "不怕慢，只怕停。"),
         Quote(author: "周恩来", quote: "干一行，爱一行，专一行，致一行，成一行。"),
     ]
 }
