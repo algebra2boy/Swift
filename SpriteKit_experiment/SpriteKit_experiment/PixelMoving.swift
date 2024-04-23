@@ -32,8 +32,22 @@ enum PlayerDirection: String {
 class PixelMovingGameScene: SKScene {
     // Game code here
     
+    // this is the green dot player
+    var player = SKSpriteNode(color: .green, size: CGSize(width: 16, height: 16))
+    
     // receive player's direction from the controller
     @Binding var currentDirection: PlayerDirection
+    
+    override func didMove(to view: SKView) {
+        player.physicsBody = SKPhysicsBody(rectangleOf: player.size)
+        player.physicsBody?.affectedByGravity = false // this add gravity to the player
+        player.position = .init(x: size.width / 2, y: size.height / 2) // make the player position in the middle
+        player.physicsBody?.linearDamping = 0
+        addChild(player) // must add this to add the player to the scene
+    }
+    
+    override func update(_ currentTime: TimeInterval) {
+    }
     
     init(_ direction: Binding<PlayerDirection>) {
         _currentDirection = direction
