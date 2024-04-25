@@ -29,7 +29,13 @@ enum PlayerDirection: String {
     
 }
 
-class PixelMovingGameScene: SKScene {
+struct PhysicsCategory {
+    static let none: UInt32 = 0
+    static let player: UInt32 = 0b1 // 1
+    static let apple: UInt32 = 0b10 // 2
+}
+
+class PixelMovingGameScene: SKScene, SKPhysicsContactDelegate {
     // Game code here
     
     // this is the green dot player
@@ -39,13 +45,39 @@ class PixelMovingGameScene: SKScene {
     @Binding var currentDirection: PlayerDirection
     
     override func didMove(to view: SKView) {
+        // sets the scene itself as the delegate to handle contact (collision) notifications.
+        physicsWorld.contactDelegate = self
+        self.view?.showsPhysics = true
+        
         player.physicsBody = SKPhysicsBody(rectangleOf: player.size)
         player.physicsBody?.affectedByGravity = false // this add gravity to the player
         player.position = .init(x: size.width / 2, y: size.height / 2) // make the player position in the middle
         player.physicsBody?.linearDamping = 0
         addChild(player) // must add this to add the player to the scene
         
-        spawnApple()
+        // attach mask to player node
+        player.physicsBody?.categoryBitMask = PhysicsCategory.player
+        player.physicsBody?.contactTestBitMask = PhysicsCategory.apple
+        player.physicsBody?.collisionBitMask = PhysicsCategory.none
+        
+        spawnApple() // place the first apple
+    }
+    
+    func didBegin(_ contact: SKPhysicsContact) {
+        let bodyA = contact.bodyA
+        let bodyB = contact.bodyB
+        
+        // one body is the player and the other is an apple
+        if bodyA.categoryBitMask == PhysicsCategory.player && bodyB.categoryBitMask == PhysicsCategory.apple {
+            bodyB.node?.removeFromParent() // remove apple from scene
+            spawnApple()
+            growPlayer()
+        } else if bodyA.categoryBitMask == PhysicsCategory.apple && bodyB.categoryBitMask == PhysicsCategory.player {
+            bodyA.node?.removeFromParent()
+            spawnApple()
+            growPlayer()
+        }
+        
     }
     
     override func update(_ currentTime: TimeInterval) {
@@ -81,7 +113,6 @@ class PixelMovingGameScene: SKScene {
             player.position.y = self.size.height - (player.size.height / 2)
             currentDirection = .stop
         }
-        
     }
     
     func spawnApple() {
@@ -89,6 +120,10 @@ class PixelMovingGameScene: SKScene {
         apple.physicsBody = SKPhysicsBody(rectangleOf: apple.size)
         apple.physicsBody?.affectedByGravity = false
         apple.physicsBody?.isDynamic = false
+        
+        apple.physicsBody?.categoryBitMask = PhysicsCategory.apple
+        apple.physicsBody?.contactTestBitMask = PhysicsCategory.player
+        apple.physicsBody?.collisionBitMask = PhysicsCategory.none
         
         // Random position generate
         let x = CGFloat.random(in: (apple.size.width / 2)...(size.width - apple.size.width / 2))
@@ -98,6 +133,18 @@ class PixelMovingGameScene: SKScene {
         
         addChild(apple)
         
+    }
+    
+    func growPlayer() {
+        let newSize = CGSize(width: player.size.width * 1.1, height: player.size.height * 1.1)
+        player.size = newSize
+        player.physicsBody = SKPhysicsBody(rectangleOf: player.size)
+        player.physicsBody?.affectedByGravity = false
+        player.physicsBody?.linearDamping = 0
+        
+        player.physicsBody?.categoryBitMask = PhysicsCategory.player
+        player.physicsBody?.contactTestBitMask = PhysicsCategory.apple
+        player.physicsBody?.collisionBitMask = PhysicsCategory.none
     }
     
     init(_ direction: Binding<PlayerDirection>) {
