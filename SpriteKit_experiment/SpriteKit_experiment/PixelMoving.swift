@@ -44,9 +44,60 @@ class PixelMovingGameScene: SKScene {
         player.position = .init(x: size.width / 2, y: size.height / 2) // make the player position in the middle
         player.physicsBody?.linearDamping = 0
         addChild(player) // must add this to add the player to the scene
+        
+        spawnApple()
     }
     
     override func update(_ currentTime: TimeInterval) {
+        // player is turning left but current direction is right
+        if player.physicsBody?.velocity.dx ?? 0 < 0, currentDirection.velocity.dx > 0 {
+            // can't turn
+        // player to right, but current direction is left
+        } else if player.physicsBody?.velocity.dx ?? 0 > 0, currentDirection.velocity.dx < 0 {
+            // can't turn
+        // player to down, but current direction is up
+        } else if player.physicsBody?.velocity.dy ?? 0 < 0, currentDirection.velocity.dy > 0 {
+            // can't turn
+        // player to up, but current direction is down
+        } else if player.physicsBody?.velocity.dy ?? 0 > 0, currentDirection.velocity.dy < 0 {
+            // can't turn
+        } else {
+            player.physicsBody?.velocity = currentDirection.velocity
+        }
+        
+        let playerHeightPadding = (player.size.height / 2) - 1
+        let playerWidthPadding = (player.size.width / 2) - 1
+        
+        if player.position.x <= playerWidthPadding {
+            player.position.x = player.size.width / 2
+            currentDirection = .stop
+        } else if player.position.x >= (self.size.width - playerWidthPadding) {
+            player.position.x = self.size.width - (player.size.width / 2)
+            currentDirection = .stop
+        } else if player.position.y <= playerHeightPadding {
+            player.position.y = player.size.height / 2
+            currentDirection = .stop
+        } else if player.position.y >= (self.size.height - playerHeightPadding) {
+            player.position.y = self.size.height - (player.size.height / 2)
+            currentDirection = .stop
+        }
+        
+    }
+    
+    func spawnApple() {
+        let apple = SKSpriteNode(color: .red, size: CGSize(width: 10, height: 10))
+        apple.physicsBody = SKPhysicsBody(rectangleOf: apple.size)
+        apple.physicsBody?.affectedByGravity = false
+        apple.physicsBody?.isDynamic = false
+        
+        // Random position generate
+        let x = CGFloat.random(in: (apple.size.width / 2)...(size.width - apple.size.width / 2))
+        let y = CGFloat.random(in: (apple.size.height / 2)...(size.height - apple.size.height / 2))
+        
+        apple.position = CGPoint(x: x, y: y)
+        
+        addChild(apple)
+        
     }
     
     init(_ direction: Binding<PlayerDirection>) {
@@ -101,7 +152,7 @@ struct PixelMoving: View {
                 .padding(.all, 10)
                 
             }
-
+            
         }
         
     }
