@@ -1,14 +1,14 @@
 //
-//  FirstIpadAppApp.swift
-//  FirstIpadApp
+//  QuackApp.swift
+//  Quack
 //
-//  Created by Yongye on 7/7/24.
+//  Created by Yongye on 7/16/24.
 //
 
 import SwiftUI
 
 @main
-struct FirstIpadAppApp: App {
+struct QuackApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

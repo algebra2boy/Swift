@@ -1,13 +1,13 @@
 //
-//  FirstIpadAppUITestsLaunchTests.swift
-//  FirstIpadAppUITests
+//  QuackUITestsLaunchTests.swift
+//  QuackUITests
 //
-//  Created by Yongye on 7/7/24.
+//  Created by Yongye on 7/16/24.
 //
 
 import XCTest
 
-final class FirstIpadAppUITestsLaunchTests: XCTestCase {
+final class QuackUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

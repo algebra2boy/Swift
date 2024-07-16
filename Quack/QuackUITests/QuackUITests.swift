@@ -1,13 +1,13 @@
 //
-//  FirstIpadAppUITests.swift
-//  FirstIpadAppUITests
+//  QuackUITests.swift
+//  QuackUITests
 //
-//  Created by Yongye on 7/7/24.
+//  Created by Yongye on 7/16/24.
 //
 
 import XCTest
 
-final class FirstIpadAppUITests: XCTestCase {
+final class QuackUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

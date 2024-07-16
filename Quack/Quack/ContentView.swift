@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  FirstIpadApp
+//  Quack
 //
-//  Created by Yongye on 7/7/24.
+//  Created by Yongye on 7/16/24.
 //
 
 import SwiftUI
@@ -14,7 +14,6 @@ struct ContentView: View {
         } detail: {
             Text("detail view")
         }
-
     }
 }
 
