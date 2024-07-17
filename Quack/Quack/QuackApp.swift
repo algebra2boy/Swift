@@ -13,5 +13,9 @@ struct QuackApp: App {
         WindowGroup {
             ContentView()
         }
+        
+//        MenuBarExtra("quack", systemImage: "shippingbox") {
+//            Text("HELLO")
+//        }
     }
 }
