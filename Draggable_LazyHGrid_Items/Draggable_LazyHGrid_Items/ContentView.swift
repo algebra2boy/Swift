@@ -159,9 +159,8 @@ struct DraggableLazyVGridView: View {
                         .frame(height: 80)
                         .overlay(Text("\(item.id)").foregroundColor(.white))
                 } preview: { item in
-                    RoundedRectangle(cornerRadius: 12)
-                        .fill(Color.blue)
-                        .frame(height: 100)
+                    RoundedRectangle(cornerRadius: .zero)
+                        .frame(width: .zero)
 //                        .overlay(Text("Dragging \(item.id)").foregroundColor(.white))
                 } moveAction: { from, to in
                     items.move(fromOffsets: from, toOffset: to)
@@ -186,10 +185,8 @@ struct DraggableLazyHGridView: View {
                         .frame(width: 100)
                         .overlay(Text("\(item.id)").foregroundColor(.white))
                 } preview: { item in
-                    RoundedRectangle(cornerRadius: 12)
-                        .fill(Color.green)
-                        .frame(width: 120)
-//                        .overlay(Text("Dragging \(item.id)").foregroundColor(.white))
+                    RoundedRectangle(cornerRadius: .zero)
+                        .frame(width: .zero)
                 } moveAction: { from, to in
                     items.move(fromOffsets: from, toOffset: to)
                 }
@@ -200,6 +197,7 @@ struct DraggableLazyHGridView: View {
         .background(Color.gray.opacity(0.1))
     }
 }
+
 
 #Preview("lazyVGrid") {
     DraggableLazyVGridView()
