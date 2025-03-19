@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "tomato-logo.png",
+      "filename" : "tomato-logo-no-alpa.png",
       "idiom" : "universal",
       "platform" : "watchos",
       "size" : "1024x1024"
