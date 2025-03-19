@@ -39,9 +39,9 @@ struct PickerView: View {
 
 #Preview {
     
-    @State var studyTimeSelection: Int = 25
-    @State var restTimeSelection: Int = 5
+    @Previewable @State var studyTimeSelection: Int = 25
+    @Previewable @State var restTimeSelection: Int = 5
     
-    return PickerView(studyTimeSelection: $studyTimeSelection,
+    PickerView(studyTimeSelection: $studyTimeSelection,
                restTimeSelection: $restTimeSelection)
 }

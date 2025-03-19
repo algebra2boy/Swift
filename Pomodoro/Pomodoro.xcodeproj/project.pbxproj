@@ -12,8 +12,8 @@
 		AE7367332B6E88BF006A325C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7367322B6E88BF006A325C /* ContentView.swift */; };
 		AE7367352B6E88C1006A325C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE7367342B6E88C1006A325C /* Assets.xcassets */; };
 		AE7367382B6E88C1006A325C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE7367372B6E88C1006A325C /* Preview Assets.xcassets */; };
-		AE7367432B6E91F9006A325C /* testing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE7367422B6E91F9006A325C /* testing.mp3 */; };
 		AE7367452B6E950A006A325C /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7367442B6E950A006A325C /* PickerView.swift */; };
+		CD124A562D8A7AE6002E4B2C /* timeUp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD124A552D8A7AE6002E4B2C /* timeUp.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +47,8 @@
 		AE7367322B6E88BF006A325C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AE7367342B6E88C1006A325C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE7367372B6E88C1006A325C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		AE7367422B6E91F9006A325C /* testing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = testing.mp3; path = ../../../../Downloads/testing.mp3; sourceTree = "<group>"; };
 		AE7367442B6E950A006A325C /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		CD124A552D8A7AE6002E4B2C /* timeUp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = timeUp.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +85,7 @@
 				AE7367302B6E88BF006A325C /* PomodoroApp.swift */,
 				AE7367322B6E88BF006A325C /* ContentView.swift */,
 				AE7367442B6E950A006A325C /* PickerView.swift */,
-				AE7367422B6E91F9006A325C /* testing.mp3 */,
+				CD124A552D8A7AE6002E4B2C /* timeUp.mp3 */,
 				AE7367342B6E88C1006A325C /* Assets.xcassets */,
 				AE7367362B6E88C1006A325C /* Preview Content */,
 			);
@@ -145,7 +145,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					AE7367242B6E88BF006A325C = {
 						CreatedOnToolsVersion = 15.2;
@@ -186,9 +186,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD124A562D8A7AE6002E4B2C /* timeUp.mp3 in Resources */,
 				AE7367382B6E88C1006A325C /* Preview Assets.xcassets in Resources */,
 				AE7367352B6E88C1006A325C /* Assets.xcassets in Resources */,
-				AE7367432B6E91F9006A325C /* testing.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +250,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -311,6 +312,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -394,7 +396,6 @@
 		AE7367402B6E88C1006A325C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G3C3QJW6UE;
@@ -410,7 +411,6 @@
 		AE7367412B6E88C1006A325C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G3C3QJW6UE;
