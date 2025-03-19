@@ -42,14 +42,15 @@ struct ContentView: View {
                         Image(systemName: "arrow.right")
                     }
                     .buttonStyle(.plain)
+                    
                 }
                 
-                VStack(spacing: 5) {
+                VStack {
                     Button(action: toggleTimer) {
                         Image("tomato")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 300, height: 100)
+                            .frame(width: 300, height: 80)
                     }
                     .buttonStyle(.plain)
                     
@@ -68,7 +69,8 @@ struct ContentView: View {
                     Text(isStudying ? "Study" : "Rest")
                 }
             }
-            //            .navigationTitle("Pomodoro")
+            .padding(.top, 13)
+            // .navigationTitle("Pomodoro")
             .onAppear(perform: resetTimer)
         }
     }
